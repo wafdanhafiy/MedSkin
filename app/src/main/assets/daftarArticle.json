@@ -1,0 +1,44 @@
+{
+		"article":[
+		{
+			"id": "a11",
+			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+			"author": "Lorem",
+			"title": "Lorem ipsum dolor sit amet.",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+			"url": "https://ayobandung.com/read/2021/05/17/229330/5-tanda-kanker-kulit-yang-muncul-di-kuku",
+			"imgUrl": "https://cdn.ayobandung.com/upload/bank_image/medium/catat-6-tampilan-kuku-ini-bisa-tunjukan-masalah-kesehatan.jpg"
+		},
+		{
+			"id": "a12",
+			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+			"author": "Lorem",
+			"title": "Lorem ipsum dolor sit amet.",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+			"url": "https://www.liputan6.com/lifestyle/read/4561730/8-manfaat-cendana-merah-jaga-kesehatan-kulit-hingga-minimalkan-risiko-kanker",
+			"imgUrl": "https://cdn0-production-images-kly.akamaized.net/8btkIMw4MDHqTgDAU-I3sNAzDV8=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3197498/original/051621600_1596446863-pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall_231208-1388.jpg"
+		},
+		{
+			"id": "a13",
+			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+			"author": "Lorem",
+			"title": "Lorem ipsum dolor sit amet.",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+			"url": "https://www.indozone.id/health/o8sZP45/dikira-bintik-biasa-model-ini-kaget-saat-didiagnosis-menderita-kanker-kulit/read-all",
+			"imgUrl": "https://statics.indozone.news/content/2021/05/11/o8sZP45/dikira-bintik-biasa-model-ini-kaget-saat-didiagnosis-menderita-kanker-kulit10_700.jpg"
+		},
+		
+		{
+			"id": "a14",
+			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+			"author": "Lorem",
+			"title": "Lorem ipsum dolor sit amet.",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+			"url": "https://www.indozone.id/health/aPsRaR/ini-alasan-minum-kopi-turunkan-risiko-kanker-kulit-melanoma",
+			"imgUrl": "https://statics.indozone.news/content/2020/02/08/aPsRaR/t_5e3e4f944b598_700.jpg"
+		}
+		
+		
+		
+		]
+}
