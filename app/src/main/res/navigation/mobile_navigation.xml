@@ -7,35 +7,35 @@
 
     <fragment
         android:id="@+id/navigation_analitycs"
-        android:name="com.bangkit.medskin.ui.analytics.AnalyticsFragment"
+        android:name="com.protel.medskin.ui.analytics.AnalyticsFragment"
         android:label="@string/title_analitycs"
         tools:layout="@layout/fragment_analitycs" />
 
     <fragment
         android:id="@+id/navigation_data"
-        android:name="com.bangkit.medskin.ui.article.ArticlesFragment"
+        android:name="com.protel.medskin.ui.article.ArticlesFragment"
         android:label="@string/title_data"
         tools:layout="@layout/fragment_articles" />
 
     <fragment
         android:id="@+id/navigation_articles"
-        android:name="com.bangkit.medskin.ui.article.ArticlesFragment"
+        android:name="com.protel.medskin.ui.article.ArticlesFragment"
         android:label="@string/title_articles"
         tools:layout="@layout/fragment_articles" />
 
     <fragment
         android:id="@+id/navigation_info"
-        android:name="com.bangkit.medskin.ui.article.ArticlesFragment"
+        android:name="com.protel.medskin.ui.article.ArticlesFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_articles" />
     <fragment
         android:id="@+id/nearByFragment"
-        android:name="com.bangkit.medskin.ui.nearby.NearByActivity"
+        android:name="com.protel.medskin.ui.nearby.NearByActivity"
         android:label="fragment_detail_nearby"
         tools:layout="@layout/activity_detail_nearby" />
     <fragment
         android:id="@+id/detailResultFragment"
-        android:name="com.bangkit.medskin.ui.detail.DetailResultActivity"
+        android:name="com.protel.medskin.ui.detail.DetailResultActivity"
         android:label="fragment_detail_result"
         tools:layout="@layout/activity_detail_result" />
 

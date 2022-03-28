@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bangkit.medskin">
+    package="com.protel.medskin">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Medskin">
-        <activity android:name="com.bangkit.medskin.SplashScreenActivity"
+        <activity android:name="com.protel.medskin.SplashScreenActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,11 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.bangkit.medskin.ui.article.DetailArticle" />
+        <activity android:name="com.protel.medskin.ui.article.DetailArticle" />
         <activity android:name=".ui.detail.DetailActivity" />
-        <activity android:name="com.bangkit.medskin.ui.detail.DetailResultActivity" />
-        <activity android:name="com.bangkit.medskin.ui.nearby.NearByActivity" />
-        <activity android:name="com.bangkit.medskin.MainActivity"/>
+        <activity android:name="com.protel.medskin.ui.detail.DetailResultActivity" />
+        <activity android:name="com.protel.medskin.ui.nearby.NearByActivity" />
+        <activity android:name="com.protel.medskin.MainActivity"/>
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
