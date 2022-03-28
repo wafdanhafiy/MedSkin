@@ -12,9 +12,9 @@
         tools:layout="@layout/fragment_analitycs" />
 
     <fragment
-        android:id="@+id/navigation_articles"
+        android:id="@+id/navigation_data"
         android:name="com.bangkit.medskin.ui.article.ArticlesFragment"
-        android:label="@string/title_articles"
+        android:label="@string/title_data"
         tools:layout="@layout/fragment_articles" />
 
     <fragment
@@ -24,9 +24,9 @@
         tools:layout="@layout/fragment_articles" />
 
     <fragment
-        android:id="@+id/navigation_articles"
+        android:id="@+id/navigation_info"
         android:name="com.bangkit.medskin.ui.article.ArticlesFragment"
-        android:label="@string/title_articles"
+        android:label="@string/title_info"
         tools:layout="@layout/fragment_articles" />
     <fragment
         android:id="@+id/nearByFragment"

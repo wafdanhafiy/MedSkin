@@ -2,7 +2,9 @@
     <string name="app_name">MedSkin</string>
     <string name="google_maps_key">AIzaSyCifPRSXYzjMsQJwSSsKunNGnGIQSQ0obc</string>
     <string name="title_analitycs">Prediagnosa</string>
-    <string name="title_articles">Artikel </string>
+    <string name="title_articles">Artikel</string>
+    <string name="title_data">List</string>
+    <string name="title_info">Info</string>
     <string name="title_detail">Detail Prediksi</string>
     <string name="title_detail_article">Detail Artikel"</string>
     <string name="take_image">Ambil Gambar</string>
