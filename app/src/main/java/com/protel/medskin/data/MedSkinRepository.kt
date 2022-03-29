@@ -4,23 +4,25 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.protel.medskin.data.source.local.entity.ArticleEntity
+import com.protel.medskin.data.source.local.entity.DataEntity
 import com.protel.medskin.data.source.local.entity.MapsEntity
 import com.protel.medskin.data.source.local.entity.PredictionEntity
 import com.protel.medskin.data.source.remote.RemoteDataSource
 import com.protel.medskin.data.source.remote.response.ArticleResponse
+import com.protel.medskin.data.source.remote.response.DataResponse
 import com.protel.medskin.data.source.remote.response.ResultResponse
 import com.protel.medskin.data.source.remote.response.ResultsItem
 import okhttp3.RequestBody
 
-class SkinScanRepository private constructor(private val remoteDataSource: RemoteDataSource) :
-    ISkinScanRepository {
+class MedSkinRepository private constructor(private val remoteDataSource: RemoteDataSource) :
+    IMedSkinRepository {
     companion object {
         @Volatile
-        private var instance: SkinScanRepository? = null
+        private var instance: MedSkinRepository? = null
 
-        fun getInstance(remoteDataSource: RemoteDataSource): SkinScanRepository =
+        fun getInstance(remoteDataSource: RemoteDataSource): MedSkinRepository =
             instance ?: synchronized(this) {
-                instance ?: SkinScanRepository(remoteDataSource).apply {
+                instance ?: MedSkinRepository(remoteDataSource).apply {
                     instance = this
                 }
             }
@@ -47,6 +49,27 @@ class SkinScanRepository private constructor(private val remoteDataSource: Remot
 
 
         return articleResult
+    }
+
+    override fun getAllData(): LiveData<List<DataEntity>>{
+        val dataResult = MutableLiveData<List<DataEntity>>()
+        remoteDataSource.getAllData(object : RemoteDataSource.LoadDataCallback {
+            override fun onAllDataReceived(dataResponse: List<DataResponse>) {
+                val dataList = ArrayList<DataEntity>()
+                for (response in dataResponse) {
+                    val data = DataEntity(response.id,
+                        response.title,
+                        response.description,
+                        response.imgPath)
+
+                    dataList.add(data)
+                }
+                dataResult.postValue(dataList)
+            }
+        })
+
+
+        return dataResult
     }
 
     override fun getHospitalNearBy(

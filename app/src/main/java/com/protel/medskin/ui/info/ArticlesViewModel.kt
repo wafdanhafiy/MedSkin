@@ -1,4 +1,4 @@
-package com.protel.medskin.ui.article
+package com.protel.medskin.ui.info
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

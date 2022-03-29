@@ -2,11 +2,11 @@ package com.protel.medskin.ui.nearby
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.protel.medskin.data.SkinScanRepository
+import com.protel.medskin.data.MedSkinRepository
 import com.protel.medskin.data.source.local.entity.MapsEntity
 
-class NearByViewModel(private val mSkinScanRepository: SkinScanRepository) : ViewModel() {
+class NearByViewModel(private val mMedSkinRepository: MedSkinRepository) : ViewModel() {
 
     fun getHospitalNearBy(latitude: String, longitude: String): LiveData<List<MapsEntity>> =
-        mSkinScanRepository.getHospitalNearBy(latitude, longitude)
+        mMedSkinRepository.getHospitalNearBy(latitude, longitude)
 }

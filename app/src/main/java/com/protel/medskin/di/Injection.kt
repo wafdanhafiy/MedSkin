@@ -1,13 +1,13 @@
 package com.protel.medskin.di
 
 import android.content.Context
-import com.protel.medskin.data.SkinScanRepository
+import com.protel.medskin.data.MedSkinRepository
 import com.protel.medskin.data.source.remote.RemoteDataSource
 import com.protel.medskin.utils.JsonHelper
 
 object Injection {
-    fun provideSkinScanRepository(context: Context): SkinScanRepository {
+    fun provideMedSkinRepository(context: Context): MedSkinRepository {
         val remoteDataSource = RemoteDataSource.getInstance(JsonHelper(context))
-        return SkinScanRepository.getInstance(remoteDataSource)
+        return MedSkinRepository.getInstance(remoteDataSource)
     }
 }

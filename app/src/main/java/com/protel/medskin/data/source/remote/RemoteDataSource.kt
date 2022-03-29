@@ -2,10 +2,7 @@ package com.protel.medskin.data.source.remote
 
 import android.util.Log
 import com.protel.medskin.data.source.remote.network.ApiConfig
-import com.protel.medskin.data.source.remote.response.ArticleResponse
-import com.protel.medskin.data.source.remote.response.ResponseMaps
-import com.protel.medskin.data.source.remote.response.ResultResponse
-import com.protel.medskin.data.source.remote.response.ResultsItem
+import com.protel.medskin.data.source.remote.response.*
 import com.protel.medskin.utils.JsonHelper
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -34,7 +31,15 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
 
     interface LoadArticleCallback{
         fun onAllArticleReceived(articleResponse: List<ArticleResponse>)
-}
+    }
+
+    fun getAllData(callback: LoadDataCallback) {
+        callback.onAllDataReceived(jsonHelper.loadData())
+    }
+
+    interface LoadDataCallback{
+        fun onAllDataReceived(dataResponse: List<DataResponse>)
+    }
 
 
     fun getHospitalNearBy(

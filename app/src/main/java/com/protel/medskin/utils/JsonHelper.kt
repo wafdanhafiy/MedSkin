@@ -2,6 +2,7 @@ package com.protel.medskin.utils
 
 import android.content.Context
 import com.protel.medskin.data.source.remote.response.ArticleResponse
+import com.protel.medskin.data.source.remote.response.DataResponse
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
@@ -40,6 +41,30 @@ class JsonHelper(private val context: Context) {
 
                 val articleResponse = ArticleResponse(id, author, title, description, release_date, imgPath)
                 list.add(articleResponse)
+            }
+        }catch (e: JSONException){
+            e.printStackTrace()
+        }
+
+        return list
+    }
+
+    fun loadData(): List<DataResponse> {
+        val list = ArrayList<DataResponse>()
+        try {
+
+            val responseObject = JSONObject(parsingFileToString("daftarPenyakit.json").toString())
+            val listArray = responseObject.getJSONArray("data")
+            for (i in 0 until listArray.length()){
+                val data = listArray.getJSONObject(i)
+
+                val id = data.getString("id")
+                val title = data.getString("title")
+                val description = data.getString("content")
+                val imgPath = data.getString("imgUrl")
+
+                val dataResponse = DataResponse(id, title, description, imgPath)
+                list.add(dataResponse)
             }
         }catch (e: JSONException){
             e.printStackTrace()

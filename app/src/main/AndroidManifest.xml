@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.protel.medskin">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -26,11 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.protel.medskin.ui.article.DetailArticle" />
+        <activity android:name=".ui.article.DetailArticle" />
+        <activity android:name=".ui.datalist.DetailData" />
         <activity android:name=".ui.detail.DetailActivity" />
-        <activity android:name="com.protel.medskin.ui.detail.DetailResultActivity" />
-        <activity android:name="com.protel.medskin.ui.nearby.NearByActivity" />
-        <activity android:name="com.protel.medskin.MainActivity"/>
+        <activity android:name=".ui.detail.DetailResultActivity" />
+        <activity android:name=".ui.nearby.NearByActivity" />
+        <activity android:name=".MainActivity"/>
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"

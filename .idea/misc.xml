@@ -42,7 +42,9 @@
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1635" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/drawable/rectangle.xml" value="0.1635" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/drawable/shape.xml" value="0.1635" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_article_data.xml" value="0.11006683375104427" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_article_detail.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_data_detail.xml" value="0.25" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_detail.xml" value="0.11006683375104427" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_detail_nearby.xml" value="0.25" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_detail_result.xml" value="0.11006683375104427" />
@@ -50,9 +52,14 @@
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/activity_splash_screen.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_analitycs.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_articles.xml" value="0.1" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_blank.xml" value="0.10442773600668337" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_data.xml" value="0.11006683375104427" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_info.xml" value="0.11006683375104427" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_item.xml" value="0.11006683375104427" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_item_list.xml" value="0.11006683375104427" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/fragment_login.xml" value="0.11006683375104427" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/item_row_articles.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/layout/item_row_data.xml" value="0.2" />
         <entry key="..\:/Users/Roy Hiraga/Downloads/Kuliah/ProTel/MedSkin/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
       </map>
     </option>

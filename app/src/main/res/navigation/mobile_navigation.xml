@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_data"
-        android:name="com.protel.medskin.ui.article.ArticlesFragment"
+        android:name="com.protel.medskin.ui.datalist.DataFragment"
         android:label="@string/title_data"
-        tools:layout="@layout/fragment_articles" />
+        tools:layout="@layout/fragment_data" />
 
     <fragment
         android:id="@+id/navigation_articles"

@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:fitsSystemWindows="true"
-    tools:context=".ui.article.ArticlesFragment">
+    tools:context=".ui.datalist.DataFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_article"
+        android:id="@+id/rv_data"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-16dp"
         android:layout_marginBottom="50dp"
-        tools:listitem="@layout/item_row_articles" />
+        tools:listitem="@layout/item_row_data" />
 </androidx.constraintlayout.widget.ConstraintLayout>

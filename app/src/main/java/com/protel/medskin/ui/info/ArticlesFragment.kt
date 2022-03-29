@@ -1,4 +1,4 @@
-package com.protel.medskin.ui.article
+package com.protel.medskin.ui.info
 
 import android.content.Intent
 import android.os.Bundle
@@ -54,7 +54,6 @@ class ArticlesFragment : Fragment() {
             rvArticle.layoutManager = LinearLayoutManager(context)
             rvArticle.setHasFixedSize(true)
             rvArticle.adapter = adapter
-
         }
     }
 

@@ -3,13 +3,14 @@ package com.protel.medskin.utils
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.protel.medskin.data.SkinScanRepository
+import com.protel.medskin.data.MedSkinRepository
 import com.protel.medskin.di.Injection
 import com.protel.medskin.ui.analytics.AnalyticsViewModel
 import com.protel.medskin.ui.article.ArticlesViewModel
+import com.protel.medskin.ui.datalist.DataViewModel
 import com.protel.medskin.ui.nearby.NearByViewModel
 
-class ViewModelFactory private constructor(private val mSkinScanRepository: SkinScanRepository) :
+class ViewModelFactory private constructor(private val mMedSkinRepository: MedSkinRepository) :
     ViewModelProvider.NewInstanceFactory() {
 
     companion object {
@@ -18,7 +19,7 @@ class ViewModelFactory private constructor(private val mSkinScanRepository: Skin
 
         fun getInstance(context: Context): ViewModelFactory =
             instance ?: synchronized(this) {
-                instance ?: ViewModelFactory(Injection.provideSkinScanRepository(context)).apply {
+                instance ?: ViewModelFactory(Injection.provideMedSkinRepository(context)).apply {
                     instance = this
                 }
             }
@@ -28,13 +29,16 @@ class ViewModelFactory private constructor(private val mSkinScanRepository: Skin
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return when {
             modelClass.isAssignableFrom(NearByViewModel::class.java) -> {
-                NearByViewModel(mSkinScanRepository) as T
+                NearByViewModel(mMedSkinRepository) as T
             }
             modelClass.isAssignableFrom(AnalyticsViewModel::class.java) -> {
-                AnalyticsViewModel(mSkinScanRepository) as T
+                AnalyticsViewModel(mMedSkinRepository) as T
             }
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {
-                return ArticlesViewModel(mSkinScanRepository) as T
+                return ArticlesViewModel(mMedSkinRepository) as T
+            }
+            modelClass.isAssignableFrom(DataViewModel::class.java) -> {
+                return DataViewModel(mMedSkinRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel class: " + modelClass.name)
         }
