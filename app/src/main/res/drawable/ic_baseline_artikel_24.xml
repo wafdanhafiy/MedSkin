@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal"
+    android:autoMirrored="true">
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M19.2 2.4H24V20.4C24 21.3548 23.6207 22.2705 22.9456 22.9456C22.2705 23.6207 21.3548 24 20.4 24H3.6C2.64522 24 1.72955 23.6207 1.05442 22.9456C0.379285 22.2705 0 21.3548 0 20.4L0 0H19.2V2.4ZM19.2 4.8V20.4C19.2 20.7183 19.3264 21.0235 19.5515 21.2485C19.7765 21.4736 20.0817 21.6 20.4 21.6C20.7183 21.6 21.0235 21.4736 21.2485 21.2485C21.4736 21.0235 21.6 20.7183 21.6 20.4V4.8H19.2ZM2.4 2.4V20.4C2.4 20.7183 2.52643 21.0235 2.75147 21.2485C2.97652 21.4736 3.28174 21.6 3.6 21.6H17.004C16.8679 21.2146 16.7989 20.8087 16.8 20.4V2.4H2.4ZM4.8 12H14.4V14.4H4.8V12ZM4.8 16.8H14.4V19.2H4.8V16.8ZM4.8 4.8H14.4V9.6H4.8V4.8Z"/>
+</vector>

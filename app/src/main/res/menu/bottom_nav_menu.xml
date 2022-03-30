@@ -13,12 +13,12 @@
 
     <item
         android:id="@+id/navigation_articles"
-        android:icon="@drawable/ic_baseline_library_books_24"
+        android:icon="@drawable/ic_baseline_artikel_24"
         android:title="@string/title_articles" />
 
     <item
         android:id="@+id/navigation_info"
-        android:icon="@drawable/ic_baseline_library_books_24"
+        android:icon="@drawable/ic_baseline_aboutapp_24"
         android:title="@string/title_info" />
 
 </menu>
