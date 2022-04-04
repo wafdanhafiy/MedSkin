@@ -25,11 +25,33 @@
       "content": "exanthems disebabkan oleh hal di luar penyakit umum seperti gigitan serangga, terbakar sinar matahari, atau efek pengobatan. Gejala: munculnya ruam pada permukaan kulit yang menyebar luas, dapat mengalami nyeri, demam, dan batuk. Penanggulangan awal: dapat mengonsumsi parasetamol yang dapat meredakan demam serta rasa ketidak nyamannya, kemudian banyak minum air putih dan istirahat.",
       "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZF_0Gc9UWD-ZZSfSAEPSMDEKsI_ZgJbNWHw&usqp=CAU"
     },
+
     {
       "id": "a15",
       "title": "herpes",
       "content": "herpes disebabkan oleh virus herpes simpleks. Gejala: timbulnya pelepuhan pada kulit yang berwarna kemerahan dan berisi cairan. dan juga terasa nyeri dan gatal pada luka terinfeksi. Penanggulangan awal: jika sudah terkena harus segera konsultasi terhadap dokter, umumnya akan diberi obat antivirus untuk mengurangi kemampuan dari virus itu untuk menyebar.",
       "imgUrl": "https://cdn1-production-images-kly.akamaized.net/44MIo0rhgUjXxG5FnhMoPd9W2KI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1750425/original/074240700_1508923615-3__1280px-Herpes_labialis_-_opryszczka_wargowa__WC.jpg"
+    },
+
+    {
+      "id": "a16",
+      "title": "hiv/aids",
+      "content": "hiv/aids disebabkan oleh infeksi virus. Gejala: timbulnya ruam berbintik merah dengan benjolan kecil serta terasa gatal. Penanggulangan awal: jika sudah terkena dapat menggunakan obat golongan antihistamin, dan jika sudah parah segera konsultasi ke dokter. kemudian jangan terkena paparan sinar matahari secara langsung dan jangan mandi air hangat.",
+      "imgUrl": "https://image.slidesharecdn.com/sosialisasihiv-aids-160923012704/85/sosialisasi-hiv-aids-10-320.jpg?cb=1474594488"
+    },
+
+    {
+      "id": "a17",
+      "title": "actinic keratosis",
+      "content": "actinic keratosis disebabkan oleh paparan sinar ultraviolet yang berlebihan. Gejala: kulit terasa kasar, kering, dan bersisik dengan ukuran yang relatif kecil. pada bagian yang terinfeksi, berwarna merah kecoklatan serta terasa gatal atau sensasi terbakar. Penanggulangan awal: untuk mengurangi terkenanya penyakit ini dapat dengan menghindari paparan ultraviolet secara langsung, dan jika sudah terkena dapat menggunakan obat yang dianjurkan oleh dokter, melakukan terapi, atau paling parah melakukan operasi.",
+      "imgUrl": "https://asset.kompas.com/crops/XKCCXTFc5kzn3VM79WSj7SGtte4=/0x118:1000x784/750x500/data/photo/2021/11/14/61913eccedbe5.jpg"
+    },
+
+    {
+      "id": "a18",
+      "title": "stasis dermatitis",
+      "content": "stasis dermatitis disebabkan oleh penyumbatan pada pembuluh darah vena yang mengakibatkan aliran darah dan menciptakan tekanan berlebih pada kulit. Gejala: munculnya ruam berwarna kemerahan, kulit terasa kering dan berkerak, kaki terasa sakit, dan kulit akan terasa sangat gatal. Penanggulangan awal: penanganan yang dapat dilakukan sendiri yaitu jangan berdiri atau duduk terlalu lama, rajin olahraga untuk memperlancar aliran darah, dan dapat mengangkat kaki lebih tinggi dari posisi jantung untuk memperlancar serta mencegah penumpukan darah pada pembuluh darah.",
+      "imgUrl": "https://nationaleczema.org/wp-content/uploads/2020/07/stasis-dermatitis-and-ulcers-on-feet.jpg"
     }
 
   ]
