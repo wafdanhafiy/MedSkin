@@ -2,37 +2,35 @@
   "data":[
     {
       "id": "a11",
-      "title": "Nama Penyakit Kulit 1",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-      "imgUrl": "https://asset.kompas.com/crops/xIIrZZDS9jc1ShOrVh42tdbVO7E=/0x96:1000x596/780x390/data/photo/2020/02/12/5e43f074831ce.jpg"
+      "title": "urticaria hives",
+      "content": "urticaria hives disebabkan karena terpicu oleh reaksi terhadap makanan atau obat obatan tertentu serta iritasi. Gejala: muncul berkas yang terasa gatal, menonjol, dan berwarna merah pada kulit. Penanggulangan awal: biasanya dapat hilang dengan sendirinya, tetapi terdapat obat yang dapat membantu mengurangi gejalanya (antihistamin). serta dapat menggunakan kompres dingin untuk mengurangi iritasinya.",
+      "imgUrl": "https://www.nhsinform.scot/media/6589/hives-1.jpg?anchor=center&mode=crop&width=800&height=480&rnd=132896571010000000"
     },
     {
       "id": "a12",
-      "title": "Nama Penyakit Kulit 2",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-      "imgUrl": "https://asset.kompas.com/crops/xIIrZZDS9jc1ShOrVh42tdbVO7E=/0x96:1000x596/780x390/data/photo/2020/02/12/5e43f074831ce.jpg"
+      "title": "atopic dermatitis",
+      "content": "atopic dermatitis disebabkan oleh faktor genetic, lingkungan, imunologi, gangguan fungsi pelindung kulit, dan infeksi. Gejala: munculnya ruam yang mengeluarkan cairan, kulit kering dan bersisik, kulit di telapak tangan atau area bawah mata mengkerut, kulit di sekitar mata lebih gelap, dan kulit dapat pecah-pecah serta mengeluarkan darah. Penanggulangan awal: rajin membersihkan perlengkapan tidur, menggunakan selimut jika tidak tahan dingin, dan bersihkan rumah secara berkala. jika sudah terkena, dapat mengurangi gejala dengan mandi air hangat dan menggunakan obat salep.",
+      "imgUrl": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/06/10120936/Dermatitis-Atopik_Halodoc.jpg.webp"
     },
     {
       "id": "a13",
-      "title": "Nama Penyakit Kulit 3",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-      "imgUrl": "https://asset.kompas.com/crops/xIIrZZDS9jc1ShOrVh42tdbVO7E=/0x96:1000x596/780x390/data/photo/2020/02/12/5e43f074831ce.jpg"
+      "title": "bullous",
+      "content": "bullous disebabkan oleh penyakit autoimun yang mana sistem kekebalan tubuh berbalik menyerang jaringan kulit kita. Gejala: pertama berubahnya warna kulit menjadi kemerahan, kehitaman, dan terasa gatal yang umumnya muncul di bagian lipatan kulit dan kemudian setelah beberapa minggu atau bulan, pada permukaan kulit tersebut muncul luka lepuh yang berisi cairan bening bercampur darah. Penanggulangan awal: hindari mengonsumsi makanan keras atau renyah, hindari aktivitas yang dapat melukai kulit, dan kelola stress dengan baik. jika sudah terkena, dapat menggunakan obat rekomendasi dokter yang dapat membantu meredakan gejala.",
+      "imgUrl": "https://www.bmj.com/content/bmj/375/bmj.n2553/F1.medium.jpg"
     },
 
     {
       "id": "a14",
-      "title": "Nama Penyakit Kulit 4",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-      "imgUrl": "https://asset.kompas.com/crops/xIIrZZDS9jc1ShOrVh42tdbVO7E=/0x96:1000x596/780x390/data/photo/2020/02/12/5e43f074831ce.jpg"
+      "title": "exanthems",
+      "content": "exanthems disebabkan oleh hal di luar penyakit umum seperti gigitan serangga, terbakar sinar matahari, atau efek pengobatan. Gejala: munculnya ruam pada permukaan kulit yang menyebar luas, dapat mengalami nyeri, demam, dan batuk. Penanggulangan awal: dapat mengonsumsi parasetamol yang dapat meredakan demam serta rasa ketidak nyamannya, kemudian banyak minum air putih dan istirahat.",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZF_0Gc9UWD-ZZSfSAEPSMDEKsI_ZgJbNWHw&usqp=CAU"
     },
     {
       "id": "a15",
-      "title": "Nama Penyakit Kulit 5",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-      "imgUrl": "https://asset.kompas.com/crops/xIIrZZDS9jc1ShOrVh42tdbVO7E=/0x96:1000x596/780x390/data/photo/2020/02/12/5e43f074831ce.jpg"
+      "title": "herpes",
+      "content": "herpes disebabkan oleh virus herpes simpleks. Gejala: timbulnya pelepuhan pada kulit yang berwarna kemerahan dan berisi cairan. dan juga terasa nyeri dan gatal pada luka terinfeksi. Penanggulangan awal: jika sudah terkena harus segera konsultasi terhadap dokter, umumnya akan diberi obat antivirus untuk mengurangi kemampuan dari virus itu untuk menyebar.",
+      "imgUrl": "https://cdn1-production-images-kly.akamaized.net/44MIo0rhgUjXxG5FnhMoPd9W2KI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1750425/original/074240700_1508923615-3__1280px-Herpes_labialis_-_opryszczka_wargowa__WC.jpg"
     }
-
-
 
   ]
 }
