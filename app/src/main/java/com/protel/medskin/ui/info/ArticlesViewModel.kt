@@ -8,6 +8,6 @@ import com.protel.medskin.data.source.local.entity.ArticleEntity
 class ArticlesViewModel(private val MedSkinRepository: MedSkinRepository) : ViewModel() {
 
 
-    fun resultArticle(): LiveData<List<ArticleEntity>> = MedSkinRepository.getAllArticles()
 
+    fun resultArticle(): LiveData<List<ArticleEntity>> = MedSkinRepository.getAllArticles()
 }

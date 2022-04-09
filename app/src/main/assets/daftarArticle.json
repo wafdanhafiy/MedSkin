@@ -17,36 +17,36 @@
 			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
 			"url": "https://www.liputan6.com/lifestyle/read/4561730/8-manfaat-cendana-merah-jaga-kesehatan-kulit-hingga-minimalkan-risiko-kanker",
 			"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
-		},
-		{
-			"id": "a13",
-			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-			"author": "Lorem",
-			"title": "Artikel 3",
-			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-			"url": "https://www.indozone.id/health/o8sZP45/dikira-bintik-biasa-model-ini-kaget-saat-didiagnosis-menderita-kanker-kulit/read-all",
-			"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
-		},
-		
-		{
-			"id": "a14",
-			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-			"author": "Lorem",
-			"title": "Artikel 4",
-			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-			"url": "https://www.indozone.id/health/aPsRaR/ini-alasan-minum-kopi-turunkan-risiko-kanker-kulit-melanoma",
-			"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
-		},
-
-		{
-			"id": "a15",
-			"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-			"author": "Lorem",
-			"title": "Artikel 5",
-			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
-			"url": "https://www.indozone.id/health/aPsRaR/ini-alasan-minum-kopi-turunkan-risiko-kanker-kulit-melanoma",
-			"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
 		}
+		// {
+		// 	"id": "a13",
+		// 	"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+		// 	"author": "Lorem",
+		// 	"title": "Artikel 3",
+		// 	"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+		// 	"url": "https://www.indozone.id/health/o8sZP45/dikira-bintik-biasa-model-ini-kaget-saat-didiagnosis-menderita-kanker-kulit/read-all",
+		// 	"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
+		// },
+		
+		// {
+		// 	"id": "a14",
+		// 	"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+		// 	"author": "Lorem",
+		// 	"title": "Artikel 4",
+		// 	"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+		// 	"url": "https://www.indozone.id/health/aPsRaR/ini-alasan-minum-kopi-turunkan-risiko-kanker-kulit-melanoma",
+		// 	"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
+		// },
+
+		// {
+		// 	"id": "a15",
+		// 	"date": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+		// 	"author": "Lorem",
+		// 	"title": "Artikel 5",
+		// 	"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt eget velit eu fringilla. Nunc metus leo, efficitur sit amet magna eu, semper ultricies dolor. Mauris fringilla hendrerit molestie. Nunc et maximus ligula. Etiam vulputate turpis ligula, eget mollis mauris congue et. Fusce nec dolor eu risus aliquam lacinia quis nec elit. Donec varius eros nec elit vehicula, ac eleifend est fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae nulla vel turpis accumsan blandit at dictum lacus. Duis ut molestie dui. Maecenas faucibus, urna a porta euismod, odio nisl lacinia leo, non euismod dolor elit id neque. Nam elementum dictum egestas. Nam placerat nisl et arcu finibus tincidunt. Aenean vel nisi rhoncus justo finibus condimentum. Ut vitae ante varius, ullamcorper felis ac, egestas sapien.",
+		// 	"url": "https://www.indozone.id/health/aPsRaR/ini-alasan-minum-kopi-turunkan-risiko-kanker-kulit-melanoma",
+		// 	"imgUrl": "https://asset.kompas.com/crops/m4OJT1_6SEuyqGuUtuDTG6rqCek=/0x0:780x390/750x500/data/photo/2014/03/27/1105130lidah-buaya780x390.jpg"
+		// }
 		
 		
 		
