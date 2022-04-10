@@ -2,6 +2,7 @@ package com.protel.medskin
 
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.speech.RecognitionListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -11,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.protel.medskin.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,4 +59,9 @@ class MainActivity : AppCompatActivity() {
             baseContext, it
         ) == PackageManager.PERMISSION_GRANTED
     }
+
+    private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
+            ImageAnalyzer.Analyzer {
+                
+            }
 }
