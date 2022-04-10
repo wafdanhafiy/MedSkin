@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.protel.medskin.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.protel.medskin.ml.SkinModel
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -62,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
             ImageAnalyzer.Analyzer {
-                
+                private val skinModel = SkinModel.newInstance(ctx)
+
             }
 }
