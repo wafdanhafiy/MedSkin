@@ -61,9 +61,9 @@ class MainActivity : AppCompatActivity() {
         ) == PackageManager.PERMISSION_GRANTED
     }
 
-    private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
-            ImageAnalyzer.Analyzer {
-                private val skinModel = SkinModel.newInstance(ctx)
-
-            }
+//    private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
+//            ImageAnalyzer.Analyzer {
+//        private val skinModel = SkinModel.newInstance(ctx)
+//
+//    }
 }
