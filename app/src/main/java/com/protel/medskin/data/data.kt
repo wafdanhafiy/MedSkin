@@ -1,5 +1,5 @@
 package com.protel.medskin.data
 
-data class PlantsEntity(
+data class skinsEntity(
     var name: String
 )

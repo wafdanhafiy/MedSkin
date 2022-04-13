@@ -1,12 +1,12 @@
 package com.protel.medskin.utils
 
-import com.protel.medskin.data.PlantsEntity
+import com.protel.medskin.data.skinsEntity
 
 object dataDummy {
 
-    fun generateDummyPlants(): List<PlantsEntity>{
-        val plants = ArrayList<PlantsEntity>()
-        plants.add(PlantsEntity("Acne",
+    fun generateDummySkins(): List<skinsEntity>{
+        val plants = ArrayList<skinsEntity>()
+        plants.add(skinsEntity("Acne",
         ))
 
         return plants

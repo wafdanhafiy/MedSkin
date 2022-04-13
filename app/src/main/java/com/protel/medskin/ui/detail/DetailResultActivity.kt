@@ -1,19 +1,16 @@
 package com.protel.medskin.ui.detail
 
-import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.protel.medskin.R
-import com.protel.medskin.data.PlantsEntity
+import com.protel.medskin.data.skinsEntity
 import com.protel.medskin.databinding.ActivityDetailResultBinding
 import com.protel.medskin.ml.SkinModel
-import com.protel.medskin.ui.nearby.NearByActivity
 import org.tensorflow.lite.support.image.TensorImage
 
 
@@ -86,20 +83,24 @@ class DetailResultActivity : AppCompatActivity() {
 // Runs model inference and gets result.
         val outputs = model.process(image)
         val probability = outputs.probabilityAsCategoryList
-        val hasil = probability.maxByOrNull { it.score }?.label ?: "NO_PLANTS"
+        val hasil = probability.maxByOrNull { it.score }?.label ?: "NO_SKINS"
 
 
-        viewModel.setSelectedplant(hasil)
-        viewModel.getPlant()?.let { populateplant(it) }
+        viewModel.setSelectedskin(hasil)
+        viewModel.getSkin()?.let { populateskins(it) }
 
 // Releases model resources if no longer used.
         model.close()
 
 
     }
-    private fun populateplant(plantsEntity: PlantsEntity) {
+    private fun populateskins(skinsEntity: skinsEntity) {
         with(binding) {
-            judul.text = plantsEntity.name
+            judul.text = skinsEntity.name
         }
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

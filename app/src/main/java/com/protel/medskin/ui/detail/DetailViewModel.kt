@@ -1,24 +1,22 @@
 package com.protel.medskin.ui.detail
 
 import androidx.lifecycle.ViewModel
-import com.protel.medskin.data.PlantsEntity
+import com.protel.medskin.data.skinsEntity
 import com.protel.medskin.utils.dataDummy
 
 class DetailViewModel: ViewModel() {
-    private lateinit var plantsId: String
-    private lateinit var plantsId2: String
-    private lateinit var plantsId3: String
+    private lateinit var skinsId: String
 
-    fun setSelectedplant(plantsId: String){
-        this.plantsId = plantsId
+    fun setSelectedskin(skinsId: String){
+        this.skinsId = skinsId
     }
 
-    fun getPlant(): PlantsEntity? {
-        var plant: PlantsEntity? =null
-        val plantsEntity = dataDummy.generateDummyPlants()
-        for (plantsEntity in plantsEntity) {
-            if (plantsEntity.name == plantsId) {
-                plant = plantsEntity
+    fun getSkin(): skinsEntity? {
+        var skin: skinsEntity? =null
+        val skinsEntity = dataDummy.generateDummySkins()
+        for (skinsEntity in skinsEntity) {
+            if (skinsEntity.name == skinsId) {
+                skin = skinsEntity
             }
 //            else {
 //                val intent = Intent(Intent.ACTION_WEB_SEARCH)
@@ -26,7 +24,7 @@ class DetailViewModel: ViewModel() {
 //                startActivity(intent)
 //            }
         }
-        return plant
+        return skin
 
     }
 

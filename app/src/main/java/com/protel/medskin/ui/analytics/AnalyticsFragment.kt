@@ -125,42 +125,32 @@ class AnalyticsFragment : Fragment() {
         }
 
         binding.camBtn.setOnClickListener {
-            if (Build.VERSION.SDK_INT > 21) {
-                val callCameraApplicationIntent = Intent()
-                callCameraApplicationIntent.action = MediaStore.ACTION_IMAGE_CAPTURE
-
-                var photoFile: File? = null
-
-                try {
-                    photoFile = createImageFile()
-                } catch (e: IOException) {
-
-                    e.printStackTrace()
-                }
-                val outputUri = FileProvider.getUriForFile(
-                    requireActivity(),
-                    BuildConfig.APPLICATION_ID + ".provider",
-                    photoFile!!
-                )
-                callCameraApplicationIntent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri)
-
-                callCameraApplicationIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION or Intent.FLAG_GRANT_READ_URI_PERMISSION)
-
-                startActivityForResult(callCameraApplicationIntent, CAMERA_PIC_REQUEST)
-            } else {
-                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-
-                fileUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE)
-
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
-
-                startActivityForResult(intent, CAMERA_PIC_REQUEST)
-            }
+           captureImage()
 
         }
 
         return root
     }
+     private fun captureImage(){
+         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+         photoFile = getPhotoFile(FILE_NAME)
+         val outputUri = FileProvider.getUriForFile(
+             requireActivity(),
+             BuildConfig.APPLICATION_ID + ".provider",
+             photoFile!!
+         )
+         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri)
+         startActivityForResult(takePictureIntent, REQUEST_CODE)
+
+         if (context?.let { it1 -> takePictureIntent.resolveActivity(it1.packageManager) } != null) {
+
+         } else {
+             Toast.makeText(context, "unable to open camera", Toast.LENGTH_SHORT).show()
+         }
+     }
+
+
+
     private fun getOutputMediaFileUri(type: Int): Uri {
         return Uri.fromFile(getOutputMediaFile(type))
     }
