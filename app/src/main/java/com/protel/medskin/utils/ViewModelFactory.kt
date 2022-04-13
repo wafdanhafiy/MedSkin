@@ -31,9 +31,6 @@ class ViewModelFactory private constructor(private val mMedSkinRepository: MedSk
             modelClass.isAssignableFrom(NearByViewModel::class.java) -> {
                 NearByViewModel(mMedSkinRepository) as T
             }
-            modelClass.isAssignableFrom(AnalyticsViewModel::class.java) -> {
-                AnalyticsViewModel(mMedSkinRepository) as T
-            }
             modelClass.isAssignableFrom(ArticlesViewModel::class.java) -> {
                 return ArticlesViewModel(mMedSkinRepository) as T
             }

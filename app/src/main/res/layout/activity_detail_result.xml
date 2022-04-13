@@ -1,86 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".ui.detail.DetailResultActivity">
+    tools:context=".ui.detail.DetailResultActivity"
+    android:id="@+id/maincontainer">
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/searchbtn"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:background="@color/nav_color"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        >-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tombolsearch"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="SEARCH"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:gravity="center"-->
+
+    <!--            />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <ImageView
+        android:id="@+id/gambarinfo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/avatar_1"
+        />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/searchbtn"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:background="@drawable/category_box"-->
+    <!--        android:text="Search"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        app:layout_constraintBottom_toTopOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="parent" />-->
+
+    <FrameLayout
+        android:id="@+id/infoframe"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/shape"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
-        tools:layout_editor_absoluteX="-8dp">
-
-
-    </androidx.cardview.widget.CardView>
-
-    <Button
-        android:id="@+id/seeMoretBtn"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_white_24"
-        android:drawablePadding="20dp"
-        android:text="@string/see_more_result"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <TextView
-        android:id="@+id/resultSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/benign"
-        android:textColor="@android:color/holo_green_light"
-        android:textSize="40sp"
-        android:visibility="gone"
-        android:textStyle="bold"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.42000002" />
-
-    <TextView
-        android:id="@+id/resultDanger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/malignant"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.42000002" />
+        app:layout_behavior = "com.google.android.material.bottomsheet.BottomSheetBehavior"
+        >
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hasil_prediksi_anda_berpotensi"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/category_box"
+            android:layout_marginBottom="-19dp"
+            >
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Not Found"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

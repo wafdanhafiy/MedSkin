@@ -1,6 +1,10 @@
 package com.protel.medskin.ui.analytics
 
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.database.Cursor
+import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
@@ -11,6 +15,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
@@ -18,29 +23,32 @@ import androidx.lifecycle.ViewModelProvider
 import com.protel.medskin.BuildConfig
 import com.protel.medskin.databinding.FragmentAnalitycsBinding
 import com.protel.medskin.ui.detail.DetailResultActivity
-import com.protel.medskin.utils.ViewModelFactory
-import com.bumptech.glide.Glide
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.RequestBody
-import okhttp3.RequestBody.Companion.asRequestBody
-import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence
-import uk.co.deanwild.materialshowcaseview.ShowcaseConfig
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.HashMap
+
+
+private const val FILE_NAME = "photo.jpg"
+private const val REQUEST_CODE = 42
+private const val GALLERY_REQUEST_CODE = 2
+private lateinit var photoFile : File
+private lateinit var galleryphotoFile : File
+private lateinit var FilePhoto : String
+private lateinit var currentPhotoPath : String
+lateinit var bitmap: Bitmap
 
 
 class AnalyticsFragment : Fragment() {
-    private lateinit var homeViewModel: AnalyticsViewModel
+    //ImageView mImageview
+    //var imagePicker: ImageView? = null
+    //private var resolver: ContentResolver? = requireActivity().contentResolver
+    lateinit var imageView: ImageView
+    private lateinit var scanViewModel: AnalyticsViewModel
     private var _binding: FragmentAnalitycsBinding? = null
-    private val binding get() = _binding as FragmentAnalitycsBinding
     private var fileUri: Uri? = null
-    private var mediaPath: String? = null
     private var mImageFileLocation = ""
-    private var postPath: String? = null
-
+    private val binding get() = _binding!!
 
     companion object {
         const val SHOWCASE_ID = "SHOWCASE_ID_1"
@@ -92,98 +100,74 @@ class AnalyticsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
+        scanViewModel =
+            ViewModelProvider(this).get(AnalyticsViewModel::class.java)
 
         _binding = FragmentAnalitycsBinding.inflate(inflater, container, false)
-
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.camBtn.setOnClickListener {
-            captureImage()
-        }
+        val root: View = binding.root
 
         binding.uploadBtn.setOnClickListener {
-            val galleryIntent = Intent(
-                Intent.ACTION_PICK,
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-            )
-            startActivityForResult(galleryIntent, REQUEST_PICK_PHOTO)
+
+            //Create an Intent with action as ACTION_PICK
+            //Create an Intent with action as ACTION_PICK
+            val intent = Intent(Intent.ACTION_PICK)
+            // Sets the type as image/*. This ensures only components of type image are selected
+            // Sets the type as image/*. This ensures only components of type image are selected
+            intent.type = "image/*"
+            //We pass an extra array with the accepted mime types. This will ensure only components with these MIME types as targeted.
+            //We pass an extra array with the accepted mime types. This will ensure only components with these MIME types as targeted.
+            val mimeTypes = arrayOf("image/jpeg", "image/png")
+            intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
+            // Launching the Intent
+            // Launching the Intent
+            startActivityForResult(intent, GALLERY_REQUEST_CODE)
         }
 
-        binding.buttonProcess.setOnClickListener {
-            uploadFile()
-        }
+        binding.camBtn.setOnClickListener {
+            if (Build.VERSION.SDK_INT > 21) {
+                val callCameraApplicationIntent = Intent()
+                callCameraApplicationIntent.action = MediaStore.ACTION_IMAGE_CAPTURE
 
-        showCaseAnalytics()
-    }
+                var photoFile: File? = null
 
-    private fun showCaseAnalytics() {
-        val config = ShowcaseConfig()
-        config.delay = 500
-        val sequence = MaterialShowcaseSequence(activity, SHOWCASE_ID)
+                try {
+                    photoFile = createImageFile()
+                } catch (e: IOException) {
 
-        sequence.setConfig(config)
-
-        // sequence.addSequenceItem(
-        //     binding.takeImageShowCase,
-        //     "gunakan ini untuk mengambil gambar dari kamera", "Mengerti"
-        // )
-
-        // sequence.addSequenceItem(
-        //     binding.choseImageShowCase,
-        //     " pilih gambar dari kamera ", "Mengerti"
-        // )
-
-
-        // sequence.addSequenceItem(
-        //     binding.processShowCase,
-        //     "unggah gambar untuk memprediksi ", "Mengerti"
-        // )
-
-        sequence.start()
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == REQUEST_TAKE_PHOTO || requestCode == REQUEST_PICK_PHOTO) {
-            if (data != null) {
-                val selectedImage = data.data
-                val filePathColumn = arrayOf(MediaStore.Images.Media.DATA)
-
-                val cursor = context?.contentResolver?.query(
-                    selectedImage!!,
-                    filePathColumn,
-                    null,
-                    null,
-                    null
+                    e.printStackTrace()
+                }
+                val outputUri = FileProvider.getUriForFile(
+                    requireActivity(),
+                    BuildConfig.APPLICATION_ID + ".provider",
+                    photoFile!!
                 )
-                assert(cursor != null)
-                cursor!!.moveToFirst()
+                callCameraApplicationIntent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri)
 
-                val columnIndex = cursor.getColumnIndex(filePathColumn[0])
-                mediaPath = cursor.getString(columnIndex)
-                binding.imageAnalitics.setImageBitmap(BitmapFactory.decodeFile(mediaPath))
-                cursor.close()
-                postPath = mediaPath
-            }
+                callCameraApplicationIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION or Intent.FLAG_GRANT_READ_URI_PERMISSION)
 
-
-        } else if (requestCode == CAMERA_PIC_REQUEST) {
-            postPath = if (Build.VERSION.SDK_INT > 21) {
-
-                Glide.with(this).load(mImageFileLocation).into(binding.imageAnalitics)
-                mImageFileLocation
-
+                startActivityForResult(callCameraApplicationIntent, CAMERA_PIC_REQUEST)
             } else {
-                Glide.with(this).load(fileUri).into(binding.imageAnalitics)
-                fileUri!!.path
+                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
+                fileUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE)
+
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
+
+                startActivityForResult(intent, CAMERA_PIC_REQUEST)
             }
 
         }
+
+        return root
+    }
+    private fun getOutputMediaFileUri(type: Int): Uri {
+        return Uri.fromFile(getOutputMediaFile(type))
+    }
+
+    private fun getPhotoFile(fileName: String): File {
+        val storageDirectory = context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+        return File.createTempFile(fileName, ".jpg", storageDirectory)
     }
 
     @Throws(IOException::class)
@@ -201,101 +185,83 @@ class AnalyticsFragment : Fragment() {
         return image
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 
-    private fun captureImage() {
-        if (Build.VERSION.SDK_INT > 21) {
-            val callCameraApplicationIntent = Intent()
-            callCameraApplicationIntent.action = MediaStore.ACTION_IMAGE_CAPTURE
-
-            var photoFile: File? = null
-
-            try {
-                photoFile = createImageFile()
-            } catch (e: IOException) {
-
-                e.printStackTrace()
+    fun getPath(context: Context, uri: Uri?): String? {
+        var result: String? = null
+        val proj = arrayOf(MediaStore.Images.Media._ID)
+        val cursor: Cursor? =
+            uri?.let { context.contentResolver.query(it, proj, null, null, null) }
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                val column_index: Int = cursor.getColumnIndexOrThrow(proj[0])
+                result = cursor.getString(column_index)
             }
-            val outputUri = FileProvider.getUriForFile(
-                requireActivity(),
-                BuildConfig.APPLICATION_ID + ".provider",
-                photoFile!!
-            )
-            callCameraApplicationIntent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri)
-
-            callCameraApplicationIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION or Intent.FLAG_GRANT_READ_URI_PERMISSION)
-
-            startActivityForResult(callCameraApplicationIntent, CAMERA_PIC_REQUEST)
-        } else {
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-
-            fileUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE)
-
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri)
-
-            startActivityForResult(intent, CAMERA_PIC_REQUEST)
+            cursor.close()
         }
-
-
+        if (result == null) {
+            result = "Not found"
+        }
+        return result
     }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
 
-    private fun getOutputMediaFileUri(type: Int): Uri {
-        return Uri.fromFile(getOutputMediaFile(type))
-    }
+        if (resultCode == Activity.RESULT_OK)
+
+            when (requestCode) {
+
+                REQUEST_CODE -> {
+                    val takenImage = BitmapFactory.decodeFile(photoFile.absolutePath)
+                    binding.imageAnalitics.setImageBitmap(takenImage)
+
+                    binding.buttonProcess.setOnClickListener {
+                        val nextIntent = Intent(context, DetailResultActivity::class.java)
+                        nextIntent.putExtra("picture", photoFile.absolutePath)
+                        Log.e(photoFile.absolutePath, photoFile.absolutePath)
+                        startActivity(nextIntent)
+                    }
+
+                }
+
+                GALLERY_REQUEST_CODE -> {
 
 
-    private fun uploadFile() {
-        if (postPath == null || postPath == "") {
-            Toast.makeText(activity, "image null ", Toast.LENGTH_SHORT).show()
-            return
-        } else {
-            loadingAnimation(true)
-            val map = HashMap<String, RequestBody>()
-            val file = File(postPath!!)
-            val requestBody = file.asRequestBody("*/*".toMediaTypeOrNull())
-            map["file\"; filename=\"" + file.name + "\""] = requestBody
+                    val selectedImage: Uri = data?.data ?: return
+                    val mBitmap: Bitmap = MediaStore.Images.Media.getBitmap(context?.contentResolver, selectedImage)
+                    binding.imageAnalitics.setImageBitmap(mBitmap)
 
-            val factory = ViewModelFactory.getInstance(requireContext())
-            homeViewModel = ViewModelProvider(this, factory)[AnalyticsViewModel::class.java]
+                    val picturePath = context?.let { getPath(it, selectedImage) }
 
-            activity?.let {
-                homeViewModel.getPrediction(map).observe(it, { prediction ->
-                    val intent = Intent(activity, DetailResultActivity::class.java)
-                    Toast.makeText(activity, "prediction $prediction", Toast.LENGTH_SHORT).show()
-                    intent.putExtra(
-                        DetailResultActivity.RESULT_PREDICTION,
-                        prediction.prediction.toString()
-                    )
-                    startActivity(intent)
-                    loadingAnimation(false)
-                })
+//                    val galleryimage = BitmapFactory.decodeFile(galleryphotoFile.absolutePath)
+//                    binding.imagecam.setImageBitmap(galleryimage)
+
+//                    val returnUri: Uri? = data?.data
+//                    val contentResolver = requireActivity().contentResolver
+//                    val bitmapImage = MediaStore.Images.Media.getBitmap(contentResolver, returnUri)
+                    //bitmapImage.scale(1,1)
+
+//                    binding.imagecam.setImageBitmap(galleryimage)
+                    //val takenImageGal = BitmapFactory.decodeFile(galleryphotoFile.absolutePath)
+                    //binding.imagecam.setImageBitmap(takenImageGal)
+
+
+                    //btngallery()
+
+                    binding.buttonProcess.setOnClickListener {
+                        val nextIntentGallery = Intent(context, DetailResultActivity::class.java)
+                        nextIntentGallery.putExtra("picturegal", selectedImage)
+                        nextIntentGallery.putExtra("imageUri", selectedImage)
+                        if (picturePath != null) {
+                            Log.e(picturePath,picturePath)
+                        }
+                        startActivity(nextIntentGallery)
+                    }
+                }
+
             }
-        }
-    }
-
-
-    private fun loadingAnimation(state: Boolean) {
-        if (state) {
-            binding.imageAnalitics.visibility = View.GONE
-            binding.uploadBtn.visibility = View.GONE
-            binding.buttonProcess.visibility = View.GONE
-            binding.camBtn.visibility = View.GONE
-            binding.cardView2.visibility = View.GONE
-            binding.animationLoading.visibility = View.VISIBLE
-
-            binding.takeImageShowCase.visibility = View.GONE
-            binding.processShowCase.visibility = View.GONE
-            binding.choseImageShowCase.visibility = View.GONE
-        } else {
-            binding.imageAnalitics.visibility = View.VISIBLE
-            binding.uploadBtn.visibility = View.VISIBLE
-            binding.buttonProcess.visibility = View.VISIBLE
-            binding.camBtn.visibility = View.VISIBLE
-            binding.cardView2.visibility = View.VISIBLE
-            binding.animationLoading.visibility = View.GONE
-
-            binding.takeImageShowCase.visibility = View.VISIBLE
-            binding.processShowCase.visibility = View.VISIBLE
-            binding.choseImageShowCase.visibility = View.VISIBLE
-        }
     }
 }
