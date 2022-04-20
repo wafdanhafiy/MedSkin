@@ -20,7 +20,7 @@ class DetailViewModel: ViewModel() {
             }
 //            else {
 //                val intent = Intent(Intent.ACTION_WEB_SEARCH)
-//                intent.putExtra(SearchManager.QUERY, plantsId)
+//                intent.putExtra(SearchManager.QUERY, skinsId)
 //                startActivity(intent)
 //            }
         }

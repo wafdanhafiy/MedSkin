@@ -67,8 +67,8 @@ class NearByActivity : AppCompatActivity(), LocationListener {
     }
     private fun dataskins(skinsEntity: skinsEntity) {
         with(binding) {
-            resultSub.text=skinsEntity.tidakbahaya
-            note.text=skinsEntity.note
+//            resultSub.text=skinsEntity.tidakbahaya
+//            note.text=skinsEntity.note
         }
     }
     private fun data(bitmap: Bitmap) {
