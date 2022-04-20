@@ -1,9 +1,11 @@
 package com.protel.medskin.ui.detail
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -11,6 +13,8 @@ import com.protel.medskin.R
 import com.protel.medskin.data.skinsEntity
 import com.protel.medskin.databinding.ActivityDetailResultBinding
 import com.protel.medskin.ml.SkinModel
+import com.protel.medskin.ui.nearby.NearByActivity
+import com.protel.medskin.ui.nearby.NearByNotActivity
 import org.tensorflow.lite.support.image.TensorImage
 
 
@@ -60,12 +64,11 @@ class DetailResultActivity : AppCompatActivity() {
 
 
         if (apa == null) {
-
             scans(ppp)
         }
 
         if (ppp != null) {
-
+            notsearch()
             //binding.searchbtn.text = ""
             scans(ppp)
         }
@@ -94,9 +97,41 @@ class DetailResultActivity : AppCompatActivity() {
 
 
     }
+
+    private fun search() {
+        binding.tombolsearch.setOnClickListener {
+
+         val nextintent = Intent(this, NearByActivity::class.java)
+          startActivity(nextintent)
+
+            binding.gambarinfo.visibility = View.GONE
+            binding.searchbtn.visibility = View.GONE
+            binding.infoframe.visibility = View.GONE
+
+
+        }
+    }
+    private fun notsearch() {
+        binding.tombolsearch.setOnClickListener {
+
+            val nextintent = Intent(this, NearByNotActivity::class.java)
+            startActivity(nextintent)
+
+            binding.gambarinfo.visibility = View.GONE
+            binding.searchbtn.visibility = View.GONE
+            binding.infoframe.visibility = View.GONE
+            binding.searchpeta.visibility=View.GONE
+
+
+        }
+    }
+
     private fun populateskins(skinsEntity: skinsEntity) {
         with(binding) {
             judul.text = skinsEntity.name
+            penyebab.text=skinsEntity.penyebab
+            gejala.text=skinsEntity.gejala
+            penanggulangan.text=skinsEntity.penanggulangan
         }
     }
     override fun onSupportNavigateUp(): Boolean {

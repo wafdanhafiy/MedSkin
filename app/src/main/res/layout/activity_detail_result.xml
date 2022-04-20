@@ -10,27 +10,49 @@
     android:id="@+id/maincontainer">
 
 
-    <!--    <LinearLayout-->
-    <!--        android:id="@+id/searchbtn"-->
-    <!--        android:layout_width="100dp"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:background="@color/nav_color"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        android:layout_marginTop="30dp"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        >-->
+    <LinearLayout
+        android:id="@+id/searchbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        >
 
-    <!--        <TextView-->
-    <!--            android:id="@+id/tombolsearch"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="SEARCH"-->
-    <!--            android:layout_gravity="center"-->
-    <!--            android:gravity="center"-->
+    <TextView
+        android:id="@+id/tombolsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PETA"
+        android:layout_gravity="center"
+        android:gravity="center"
 
-    <!--            />-->
+        />
 
-    <!--    </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchpeta"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        android:orientation="horizontal"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tombolpeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CARI"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
 
 
     <ImageView
@@ -87,6 +109,70 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:paddingBottom="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/judul">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PENYEBAB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/penyebab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Found"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="GEJALA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/gejala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Found"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="CARA PENANGGULANGAN"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/penanggulangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Found"
+                android:textSize="20sp" />
+            </LinearLayout>
+
+
+            </ScrollView>
+
 
 
 
