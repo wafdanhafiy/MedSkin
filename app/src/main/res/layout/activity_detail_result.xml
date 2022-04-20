@@ -14,7 +14,7 @@
         android:id="@+id/searchbtn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:background="@color/purple_500"
+        android:background="@color/blue_500"
         android:orientation="horizontal"
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PETA"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:gravity="center"
 
@@ -36,7 +37,7 @@
         android:id="@+id/searchpeta"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:background="@color/purple_500"
+        android:background="@color/blue_500"
         android:orientation="horizontal"
         android:layout_marginTop="220dp"
         android:layout_gravity="center"
@@ -47,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CARI"
+            android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
 
@@ -128,6 +130,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="PENYEBAB"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <TextView
@@ -135,6 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Not Found"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <TextView
@@ -143,6 +147,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="GEJALA"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <TextView
@@ -150,6 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Not Found"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
 
@@ -160,6 +166,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="CARA PENANGGULANGAN"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
 
             <TextView
@@ -167,6 +174,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Not Found"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
             </LinearLayout>
 
