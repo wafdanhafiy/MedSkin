@@ -45,7 +45,6 @@ class DetailResultActivity : AppCompatActivity() {
         val uri: Uri? = intent.getParcelableExtra("imageUri")
 
         // just display image in imageview
-        // just display image in imageview
         //imageView.setImageBitmap(BitmapFactory.decodeStream(ims))
 
         val apa = BitmapFactory.decodeFile(picture)

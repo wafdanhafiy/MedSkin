@@ -110,16 +110,12 @@ class AnalyticsFragment : Fragment() {
         binding.uploadBtn.setOnClickListener {
 
             //Create an Intent with action as ACTION_PICK
-            //Create an Intent with action as ACTION_PICK
             val intent = Intent(Intent.ACTION_PICK)
-            // Sets the type as image/*. This ensures only components of type image are selected
             // Sets the type as image/*. This ensures only components of type image are selected
             intent.type = "image/*"
             //We pass an extra array with the accepted mime types. This will ensure only components with these MIME types as targeted.
-            //We pass an extra array with the accepted mime types. This will ensure only components with these MIME types as targeted.
             val mimeTypes = arrayOf("image/jpeg", "image/png")
             intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
-            // Launching the Intent
             // Launching the Intent
             startActivityForResult(intent, GALLERY_REQUEST_CODE)
         }
