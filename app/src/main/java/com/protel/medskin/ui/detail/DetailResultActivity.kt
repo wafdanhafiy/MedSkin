@@ -67,7 +67,7 @@ class DetailResultActivity : AppCompatActivity() {
         }
 
         if (ppp != null) {
-            notsearch()
+            search()
             //binding.searchbtn.text = ""
             scans(ppp)
         }
@@ -103,9 +103,9 @@ class DetailResultActivity : AppCompatActivity() {
          val nextintent = Intent(this, NearByActivity::class.java)
           startActivity(nextintent)
 
-            binding.gambarinfo.visibility = View.GONE
-            binding.searchbtn.visibility = View.GONE
-            binding.infoframe.visibility = View.GONE
+//            binding.gambarinfo.visibility = View.GONE
+//            binding.searchbtn.visibility = View.GONE
+//            binding.infoframe.visibility = View.GONE  
 
 
         }

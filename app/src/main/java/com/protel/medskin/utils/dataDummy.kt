@@ -43,9 +43,9 @@ object dataDummy {
 // 5
         skins.add(skinsEntity(
             "Atopic Dermatitis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh faktor genetic, lingkungan, imunologi, gangguan fungsi pelindung kulit, dan infeksi.",
+            "munculnya ruam yang mengeluarkan cairan, kulit kering dan bersisik, kulit di telapak tangan atau area bawah mata mengkerut, kulit di sekitar mata lebih gelap, dan kulit dapat pecah-pecah serta mengeluarkan darah.",
+            "rajin membersihkan perlengkapan tidur, menggunakan selimut jika tidak tahan dingin, dan bersihkan rumah secara berkala. jika sudah terkena, dapat mengurangi gejala dengan mandi air hangat dan menggunakan obat salep."
         ))
 
         skins.add(skinsEntity(
@@ -106,16 +106,16 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Herpes",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh virus herpes simpleks.",
+            "timbulnya pelepuhan pada kulit yang berwarna kemerahan dan berisi cairan. dan juga terasa nyeri dan gatal pada luka terinfeksi.",
+            "jika sudah terkena harus segera konsultasi terhadap dokter, umumnya akan diberi obat antivirus untuk mengurangi kemampuan dari virus itu untuk menyebar."
         ))
 // 15
         skins.add(skinsEntity(
             "Impetigo",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh bakteri staphylococcus pyogenes atau aureus",
+            "bercak kemerahan yang terasa gatal disekitar mulut atau hidung, kulit disekitar luka mengalami iritasi, dan terbentuknya koreng berwarna kuning kecokelatan di sekitar luka",
+            "rajin mencuci tangan, menutup luka bakteri, rajin memotong kuku, dan tidak menggaruk pada bagian infeksi"
         ))
 
         skins.add(skinsEntity(

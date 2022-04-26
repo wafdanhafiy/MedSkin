@@ -45,16 +45,16 @@ class NearByActivity : AppCompatActivity(), LocationListener {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setContentView(binding.root)
         title = getString(R.string.result)
-        val uri: Uri? = intent.getParcelableExtra("imageUri")
-        val ims = uri?.let { contentResolver.openInputStream(it) }
-        val picture = intent.getStringExtra("picture")
-        val ppp = BitmapFactory.decodeStream(ims)
-        val apa = BitmapFactory.decodeFile(picture)
-
-        if (ppp != null) {
-            //binding.searchbtn.text = ""
-            data(ppp)
-        }
+//        val uri: Uri? = intent.getParcelableExtra("imageUri")
+//        val ims = uri?.let { contentResolver.openInputStream(it) }
+//        val picture = intent.getStringExtra("picture")
+//        val ppp = BitmapFactory.decodeStream(ims)
+//        val apa = BitmapFactory.decodeFile(picture)
+//
+//        if (ppp != null) {
+//            //binding.searchbtn.text = ""
+//            data(ppp)
+//        }
 
         val fragment =
             supportFragmentManager.findFragmentById(R.id.fmap) as SupportMapFragment
