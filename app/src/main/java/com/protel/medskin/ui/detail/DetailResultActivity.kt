@@ -105,7 +105,7 @@ class DetailResultActivity : AppCompatActivity() {
 
 //            binding.gambarinfo.visibility = View.GONE
 //            binding.searchbtn.visibility = View.GONE
-//            binding.infoframe.visibility = View.GONE  
+//            binding.infoframe.visibility = View.GONE
 
 
         }
