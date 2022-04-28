@@ -3,16 +3,16 @@
     <string name="google_maps_key">AIzaSyCifPRSXYzjMsQJwSSsKunNGnGIQSQ0obc</string>
     <string name="title_analitycs">Prediagnosa</string>
     <string name="title_articles">Artikel</string>
-    <string name="title_data">List</string>
-    <string name="title_info">Info</string>
-    <string name="title_detail">Detail Prediksi</string>
+    <string name="title_data">List Penyakit Kulit</string>
+    <string name="title_info">Informasi Aplikasi</string>
+    <string name="title_detail">Hasil Prediagnosa</string>
     <string name="title_detail_article">Detail Artikel"</string>
     <string name="title_detail_data">Detail Penyakit"</string>
     <string name="take_image">Ambil Gambar</string>
     <string name="upload_image">Pilih Gambar</string>
 
     <string name="test">test</string>
-    <string name="result">Peta</string>
+    <string name="result">Maps</string>
     <string name="process">Oke</string>
     <string name="see_more_result">Lihat Hasil Lebih Lanjut</string>
     <string name="noteNonDanger">Untuk mendapatkan informasi lebih lanjut , disarankan konsultasi ke dokter di rumah sakit terdekat </string>
