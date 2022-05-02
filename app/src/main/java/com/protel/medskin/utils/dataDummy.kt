@@ -8,9 +8,9 @@ object dataDummy {
         val skins = ArrayList<skinsEntity>()
         skins.add(skinsEntity(
             "AIDS",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh infeksi virus.",
+            "timbulnya ruam berbintik merah dengan benjolan kecil serta terasa gatal.",
+            "jika sudah terkena dapat menggunakan obat golongan antihistamin, dan jika sudah parah segera konsultasi ke dokter. kemudian jangan terkena paparan sinar matahari secara langsung dan jangan mandi air hangat."
         ))
 
         skins.add(skinsEntity(
@@ -22,23 +22,23 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Actinic Keratosis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh paparan sinar ultraviolet yang berlebihan.",
+            "kulit terasa kasar, kering, dan bersisik dengan ukuran yang relatif kecil. pada bagian yang terinfeksi, berwarna merah kecoklatan serta terasa gatal atau sensasi terbakar.",
+            "untuk mengurangi terkenanya penyakit ini dapat dengan menghindari paparan ultraviolet secara langsung, dan jika sudah terkena dapat menggunakan obat yang dianjurkan oleh dokter, melakukan terapi, atau paling parah melakukan operasi."
         ))
 
         skins.add(skinsEntity(
             "Alopecia Areata",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh sistem imun yang menyerang folikel rambut",
+            "rambut pada kepala mulai mengalami kebotakan dengan pola bulat yang dapat sementara atau permanen. dan jika semakin parah maka seluruh kepala akan mengalami kebotakan",
+            "untuk perawatan diri bisa memulai terapi dan memanajemen stres kita, serta dapa menggunakan obat untuk merangsang pertumbuhan rambut seperti minoxidil dan obat untuk mengobati seperti anthralin"
         ))
 
         skins.add(skinsEntity(
             "Annulare Granuloma",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "dapat disebabkan oleh infeksi seperti hepatitis, gigitan serangga, vaksinasi, paparan sinar matahari, obat obatan tertentu, dan cedera ringan pada kulit",
+            "umumnya akan muncul benjolan-benjolan dengan bintik kuning di puncaknya, seperti bisul dimana benjolan bisa mengeluarkan cairan bening, membentuk keropeng atau koreng, dan meninggalkan bekas luka",
+            "untuk meredakan penyakit ini dapat menggunakan krim anjuran dokter, pemberian ice pack pada daerah ruam untuk meredakan gejala, terapi sinar dan obat obatan sesuai anjuran dokter"
         ))
 // 5
         skins.add(skinsEntity(
@@ -57,51 +57,51 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Candidiasis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh jamur Candida albicans",
+            "munculnya bercak putih atau kuning di lidah, bibir, gusi, langit-langit mulut, dan pipi bagian dalam. lalu kemerahan di mulut dan tenggorokan. kemudian kulit akan terasa pecah-pecah di sudut mulut dan rasa nyeri saat menelan",
+            "perawatan diri dapat dimulai dengan menjaga kebersihan mulut dan gigi dengan rutin menggosok gigi dan melakukan pemeriksaan ke dokter gigi minimal 6 bulan sekali, menghentikan kebiasaan merokok, menggunakan pakaian yang nyaman dan menyerap keringat, dan rajin mengganti pakaian, pakaian dalam, dan kaos kaku, secara teratur"
         ))
 
         skins.add(skinsEntity(
             "Contact Dermatitis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan ketika kulit terpapar dan terkena zat tertentu yang menyebabkan reaksi alergi atau iritasi",
+            "kulit akan terasa kering, melepuh, berwarna kemerahan, tampak gelap, kemudian kulit juga akan merasakan gatal yang hebat, perih, mulai sensitif terhadap cahaya matahari. dan dapat terjadi Pembengkakan pada mata, muka, atau selangkangan",
+            "dapat mengenakan pakaian pelindung untuk mengurangi kontak dengan zat penyebab penyakit ini serta sinar matahari. lalu menggunakan pelembab untuk memperbaiki kondisi kulit. dapat menggunakan krim atau obat obatan untuk mengurangi efek ketidaknyamanannya"
         ))
 
         skins.add(skinsEntity(
             "Contagiosum Molluscum",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh virus molluscum contagiosum",
+            "munculnya benjolan kecil seperti biji kacang, bisa muncul di wajah, leher, ketiak, perut, kelamin, dan tungkai. umumnya berwarna kulit, putih, atau merah muda. serta ada titik kecil berwarna putih kekuningan ditengah bintik",
+            "dapat mengolesi dibagian bintik menggunakan krim atau salep sesuai anjuran, scraping atau mengikis bintil menggunakan alat medis, dan membakar dengan terapi sinar laser"
         ))
 // 10
         skins.add(skinsEntity(
             "Dermatitis Seborrheic",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "diduga disebabkan oleh jamur Malassezia furfur dan peradangan yang terkait dengan psoriasis",
+            "pada permukaan kulit akan berwarna kemerahan, terasa gatal, dan bersisik. timbulnya ketombe akibat kulit yang terkelupas yang dapat terjadi di kulit kepala atau daerah kumis, jenggot, dada, serta alis dan muncul ruam yang berbentuk bulat atau oval",
+            "untuk menghambat terjadinya kembali penyakit ini, dapat dilakukan keramas dengan sampo antijamur selama 5 menit, lalu bilas hingga bersih. Untuk membersihkan tubuh, gunakan sabun yang dapat menghilangkan minyak untuk mencegah timbulnya bakteri dan jamur. lalu angan gunakan produk perawatan kulit dan rambut yang mengandung alkohol, dan Hentikan penggunaan hair spray, gel, atau produk penataan rambut yang dapat memicu kambuhnya penyakit ini. kemudian untuk membantu mengobati dan meredakan penyakit ini dapat menggunakan obat dari anjuran dokter serta menggunakan shampo anti ketombe yang benar. serta perawatan diri seperti tidak menggaruk bagian tubuh yang terkena dermatitis seboroik dan menggunakan baju dengan bahan katun yang halus untuk mengurangi iritasi di permukaan kulit"
         ))
 
         skins.add(skinsEntity(
             "Dermatitis Stasis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh penyumbatan pada pembuluh darah vena yang mengakibatkan aliran darah dan menciptakan tekanan berlebih pada kulit.",
+            "munculnya ruam berwarna kemerahan, kulit terasa kering dan berkerak, kaki terasa sakit, dan kulit akan terasa sangat gatal.",
+            "penanganan yang dapat dilakukan sendiri yaitu jangan berdiri atau duduk terlalu lama, rajin olahraga untuk memperlancar aliran darah, dan dapat mengangkat kaki lebih tinggi dari posisi jantung untuk memperlancar serta mencegah penumpukan darah pada pembuluh darah."
         ))
 
         skins.add(skinsEntity(
             "Exanthem Viral",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh infeksi virus seperti campak, rubella, roseola, enterovirus, adnovirus, mononukleosis, dan jenis infeksi herpes. dapat juga dikarenakan karena respon imun, dan reaksi toksin oleh suatu organisme pada kulit",
+            "umumnya akan muncul bintik bintik kemerahan, bercak, dan dapat terasa gatal. bisa juga yang terinfeksi merasakan demam, sakit kepala, kehilangan selera makan, sakit perut, dan nyeri otot",
+            "hindari menyentuh mata, hidung, atau mulut dengan tangan kotor, bersihkan barang yang sering kita gunakan, jaga jarak dengan orang sakit, dan rajin mencuci tangan sampai bersih"
         ))
 
         skins.add(skinsEntity(
             "Genital Warts",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh virus human papillomavirus (HPV)",
+            "timbulnya tonjolan kulit dengan permukaan yang cenderung kasar. dapat juga terasa gatal, nyeri dan sensasi terbakar. dan penyakit yang muncul di liang vagina dapat menyebabkan keputihan dan pendarahan",
+            "untuk mencegah terkenanya penyakit ini dapat melakukan vaksin HPV serta berhati hati dalam berhubungan seksual. jika sudah terkena dapat diobati dengan menggunakan obat salep/krim seperti asam trikloroasetat, serta prosedur operasi seperti krioterapi"
         ))
 
         skins.add(skinsEntity(
@@ -120,16 +120,16 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Keratoacanthoma",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh pertumbuhan sel yang tidak normal karena cedera kulit dan sering terkena paparan sinar matahari",
+            "timbulnya benjolan berbentuk kubah dengan ukuran umum 1-3 inci dan memiliki sumbatan keras ditengah",
+            "jika sudah terkena dapat menggunakan obat antitumor, melakukan kemoterapi dan jika sudah buruk dilakukan operasi pengangkatan"
         ))
 
         skins.add(skinsEntity(
             "Keratosis Seborrheic",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan faktor genetic, sering terkena UV, dan faktor usia",
+            "terjadi pembengkakan yang terasa kasar, tebal, berbentuk oval umumnya, dan berwarna coklat, putih, atau kuning pada kulit",
+            "melakukan terapi krioterapi, dan terapi laser"
         ))
 
         skins.add(skinsEntity(
@@ -190,16 +190,16 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Psoriasis",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh autoimun tubuh yang menyerang sel kulit sehat",
+            "timbul bercak merah dan diatas bercak tersebut terdapat sisik putih yang tebal serta berlapis-lapis",
+            "menggunakan obat oles atau krim, melakukan terapi cahaya, dan jika sudah parah, mengonsumsi obat dari arahan dokter"
         ))
 
         skins.add(skinsEntity(
             "Rosacea",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh bakteri helicobacter plylori",
+            "kulit pada bagian hidung, pipi, dagu, dan dahi menjadi kemerahan. dan juga dapat menimbulkan benjolan kecil, merah, dan bernanah.",
+            "dapat menggunakan tabir pelembab untuk kulit sensitif dan kering, dan obat yang dapat mengurangi kemerahan pada kulit"
         ))
 
         skins.add(skinsEntity(
@@ -211,9 +211,9 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Sclerosis Tuberou",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan oleh perubahan atau mutasi genetik yang mengendalikan pertumbuhan sel dalam tubuh dan terjadinya tumor",
+            "penderita akan mengalami penebalan di beberapa area kulit, muncul bercak berwarna terang, tumbuh jaringan di bawah atau di sekitar kuku, dan muncul benjolan kecil menyerupai jerawat di wajah",
+            "untuk penanganannya, pertama dapat meminum obat obatan untuk mengatasi gejala dan komplikasi yang akan timbul, kemudian dilaksanakan operasi pengangkatan tumor. lalu untuk pendukung lain dapat dilakukan terapi seperti fisioterapi agar penderita tetap dapat melaksanakan kegiatan sehari hari seperti biasa"
         ))
 // 30
         skins.add(skinsEntity(
@@ -225,16 +225,16 @@ object dataDummy {
 
         skins.add(skinsEntity(
             "Tumor Vascular",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "umumnya terjadi pada anak anak yaitu jenis hemangioma yang disebabkan oleh kelahiran yang prematur, berat badan yang rendah, faktor genetik, dan mengalami gangguan saat dalam kandungan",
+            "munculnya benjolan kenyal berwarna merah yang bisa tumbuh di mana saja, termasuk wajah, leher, kulit kepala, dada, punggung bayi, bahkan mata bayi. dan untuk remaja atau dewasa jika menderita penyakit ini juga akan muncul benjolan yang sama dan tempat tumbuh yang sebagian sama juga",
+            "jika sudah terkena, segera konsultasikan ke dokter. dimana umumnya akan diberi obat untuk menghambat dalam obat minum atau suntik, dan jika sudah parah dapat dilakukan terapi laser"
         ))
 
         skins.add(skinsEntity(
             "Urticaria",
-            "penyebab_placeholder",
-            "gejala_placeholder",
-            "penanggulangan_placeholder"
+            "disebabkan karena terpicu oleh reaksi terhadap makanan atau obat obatan tertentu serta iritasi.",
+            "muncul berkas yang terasa gatal, menonjol, dan berwarna merah pada kulit.",
+            "biasanya dapat hilang dengan sendirinya, tetapi terdapat obat yang dapat membantu mengurangi gejalanya (antihistamin). serta dapat menggunakan kompres dingin untuk mengurangi iritasinya."
         ))
 
         skins.add(skinsEntity(
