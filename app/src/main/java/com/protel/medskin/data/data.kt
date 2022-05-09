@@ -4,5 +4,6 @@ data class skinsEntity(
     var name: String,
     var penyebab: String,
     var gejala: String,
-    var penanggulangan: String
+    var penanggulangan: String,
+    var akurasi: Double
 )

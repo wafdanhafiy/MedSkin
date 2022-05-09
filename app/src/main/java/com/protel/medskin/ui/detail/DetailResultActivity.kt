@@ -131,6 +131,7 @@ class DetailResultActivity : AppCompatActivity() {
             penyebab.text=skinsEntity.penyebab
             gejala.text=skinsEntity.gejala
             penanggulangan.text=skinsEntity.penanggulangan
+            akurasi.text= skinsEntity.akurasi.toString()
         }
     }
     override fun onSupportNavigateUp(): Boolean {
