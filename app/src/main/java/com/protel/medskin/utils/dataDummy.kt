@@ -282,7 +282,7 @@ object dataDummy {
             "Vitiligo",
             "disebabkan oleh kondisi kulit yang tidak dapat memproduksi melamin yang menentukan warna kulit dan tidak dapat melindungi kulit dari efek buruk sinar matahari",
             "hilangnya pigmen warna di rambut, janggut, bulu mata, dan alis (berwarna seperi keubanan). hilangnya juga pigmen warna pada bagian hitam mata, bagian dalam mulut dan hidung, serta di area kelamin. kemudian bagian tengah pada bercaknya berwarna putih dengan tepiannya yang berwarna kecoklatan atau kemerahan",
-            "penangguluntuk perawatan diri dan mengurangi terkenanya penyakit ini dapat menggunakan tabir surya, tetapi jika sudah memburuk direkomendasikan dilakukan terapi cahaya atau terapi laser, kemudian juga dapat dilakukan operasi pencakokan kulitangan_placeholder",
+            "penangguluntuk perawatan diri dan mengurangi terkenanya penyakit ini dapat menggunakan tabir surya, tetapi jika sudah memburuk direkomendasikan dilakukan terapi cahaya atau terapi laser, kemudian juga dapat dilakukan operasi pencakokan kulit",
             79.33
         ))
 

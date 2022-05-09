@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Not Found"
+                android:text="Tidak Ditemukan"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 android:textColor="@color/white"
@@ -138,7 +138,7 @@
                     android:id="@+id/akurasi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="xx.xx%"
+                    android:text="-"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -155,7 +155,7 @@
                 android:id="@+id/penyebab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Not Found"
+                android:text="-"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -172,7 +172,7 @@
                 android:id="@+id/gejala"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Not Found"
+                android:text="-"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -191,7 +191,7 @@
                 android:id="@+id/penanggulangan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Not Found"
+                android:text="-"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
             </LinearLayout>
