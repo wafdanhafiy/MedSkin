@@ -12,41 +12,41 @@
 
     <LinearLayout
         android:id="@+id/searchbtn"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:background="@color/blue_500"
         android:orientation="horizontal"
         android:layout_marginTop="80dp"
         android:layout_gravity="center"
         >
 
-    <TextView
-        android:id="@+id/tombolsearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dermatologis Terdekat"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        android:gravity="center"
+        <Button
+            android:id="@+id/tombolsearch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Dermatologis Terdekat"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
 
-        />
+            />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/searchpeta"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:background="@color/blue_500"
         android:orientation="horizontal"
         android:layout_marginTop="220dp"
         android:layout_gravity="center"
         >
 
-        <TextView
+        <Button
             android:id="@+id/tombolpeta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Info Lebih Lanjut"
             android:textColor="@color/white"
             android:layout_gravity="center"
