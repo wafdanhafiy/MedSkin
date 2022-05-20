@@ -34,7 +34,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/searchpeta"
+        android:id="@+id/tombolcari"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/blue_500"
@@ -51,6 +51,7 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
+
 
             />
 

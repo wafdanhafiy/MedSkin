@@ -72,6 +72,7 @@ class DetailResultActivity : AppCompatActivity() {
             scans(ppp)
         }
     }
+
     private fun scans(bitmap: Bitmap) {
         val viewModel = ViewModelProvider(
             this,
@@ -93,8 +94,6 @@ class DetailResultActivity : AppCompatActivity() {
 
 // Releases model resources if no longer used.
         model.close()
-
-
     }
 
     private fun search() {
@@ -106,10 +105,9 @@ class DetailResultActivity : AppCompatActivity() {
 //            binding.gambarinfo.visibility = View.GONE
 //            binding.searchbtn.visibility = View.GONE
 //            binding.infoframe.visibility = View.GONE
-
-
         }
     }
+
     private fun notsearch() {
         binding.tombolsearch.setOnClickListener {
 
@@ -119,7 +117,7 @@ class DetailResultActivity : AppCompatActivity() {
             binding.gambarinfo.visibility = View.GONE
             binding.searchbtn.visibility = View.GONE
             binding.infoframe.visibility = View.GONE
-            binding.searchpeta.visibility=View.GONE
+            binding.tombolcari.visibility=View.GONE
 
 
         }
@@ -134,6 +132,7 @@ class DetailResultActivity : AppCompatActivity() {
             akurasi.text= skinsEntity.akurasi.toString()
         }
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
