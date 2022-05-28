@@ -60,10 +60,12 @@ class JsonHelper(private val context: Context) {
 
                 val id = data.getString("id")
                 val title = data.getString("title")
-                val description = data.getString("content")
+                val penyebab = data.getString("penyebab")
+                val gejala = data.getString("gejala")
+                val cara = data.getString("cara")
                 val imgPath = data.getString("imgUrl")
 
-                val dataResponse = DataResponse(id, title, description, imgPath)
+                val dataResponse = DataResponse(id, title, penyebab, gejala, cara, imgPath)
                 list.add(dataResponse)
             }
         }catch (e: JSONException){

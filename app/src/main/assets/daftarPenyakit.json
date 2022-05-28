@@ -1,58 +1,284 @@
 {
   "data":[
     {
+      "id": "a01",
+      "title": "Acne",
+      "penyebab": "Disebabkan oleh bakteri pada pori-pori kulit.",
+      "gejala": "Kulit berwarna merah dikarenakan bernanah, sensasi panas dikarenakan peradangan, dan rasa gatal.",
+      "cara": "Rajin menjaga kebersihan diri khususnya bagian muka.",
+      "imgUrl": "https://i.ibb.co/QdbBwTS/jenis-jerawat.jpg"
+    },
+    {
+      "id": "a02",
+      "title": "Actinic Keratosis",
+      "penyebab": "Disebabkan oleh paparan sinar ultraviolet yang berlebihan.",
+      "gejala": "Kulit terasa kasar, kering, dan bersisik dengan ukuran yang relatif kecil. pada bagian yang terinfeksi, berwarna merah kecoklatan serta terasa gatal atau sensasi terbakar.",
+      "cara": "Untuk mengurangi terkenanya penyakit ini dapat dengan menghindari paparan ultraviolet secara langsung, dan jika sudah terkena dapat menggunakan obat yang dianjurkan oleh dokter, melakukan terapi, atau paling parah melakukan operasi.",
+      "imgUrl": "https://i.ibb.co/kqymfzk/61913eccedbe5.jpg"
+    },
+    {
+      "id": "a03",
+      "title": "Alopecia Areata",
+      "penyebab": "Disebabkan oleh sistem imun yang menyerang folikel rambut.",
+      "gejala": "Rambut pada kepala mulai mengalami kebotakan dengan pola bulat yang dapat sementara atau permanen. dan jika semakin parah maka seluruh kepala akan mengalami kebotakan.",
+      "cara": "Untuk perawatan diri bisa memulai terapi dan memanajemen stres kita, serta dapa menggunakan obat untuk merangsang pertumbuhan rambut seperti minoxidil dan obat untuk mengobati seperti anthralin.",
+      "imgUrl": "https://i.ibb.co/Lk7589m/61df86f25ddfc.jpg"
+    },
+    {
+      "id": "a04",
+      "title": "Atopic Dermatitis",
+      "penyebab": "Disebabkan oleh faktor genetic, lingkungan, imunologi, gangguan fungsi pelindung kulit, dan infeksi.",
+      "gejala": "Munculnya ruam yang mengeluarkan cairan, kulit kering dan bersisik, kulit di telapak tangan atau area bawah mata mengkerut, kulit di sekitar mata lebih gelap, dan kulit dapat pecah-pecah serta mengeluarkan darah.",
+      "cara": "Rajin membersihkan perlengkapan tidur, menggunakan selimut jika tidak tahan dingin, dan bersihkan rumah secara berkala. jika sudah terkena, dapat mengurangi gejala dengan mandi air hangat dan menggunakan obat salep.",
+      "imgUrl": "https://i.ibb.co/LRnh19j/1200px-Atopy2010.jpg"
+    },
+    {
+      "id": "a05",
+      "title": "Bullous Pemphigoid",
+      "penyebab": "Disebabkan oleh penyakit autoimun yang mana sistem kekebalan tubuh berbalik menyerang jaringan kulit.",
+      "gejala": "Pertama berubahnya warna kulit menjadi kemerahan, kehitaman, dan terasa gatal yang umumnya muncul di bagian lipatan kulit dan kemudian setelah beberapa minggu atau bulan, pada permukaan kulit tersebut muncul luka lepuh yang berisi cairan bening bercampur darah.",
+      "cara": "Hindari mengonsumsi makanan keras atau renyah, hindari aktivitas yang dapat melukai kulit, dan kelola stress dengan baik. jika sudah terkena, dapat menggunakan obat rekomendasi dokter yang dapat membantu meredakan gejala.",
+      "imgUrl": "https://i.ibb.co/pbH8Mcy/Bull-pem-4-fee391183f15cb4d62773032fe0be92d.jpg"
+    },
+    {
+      "id": "a06",
+      "title": "Candidiasis",
+      "penyebab": "Disebabkan oleh jamur Candida albicans.",
+      "gejala": "Munculnya bercak putih atau kuning di lidah, bibir, gusi, langit-langit mulut, dan pipi bagian dalam. Lalu kemerahan di mulut dan tenggorokan. Kemudian kulit akan terasa pecah-pecah di sudut mulut dan rasa nyeri saat menelan.",
+      "cara": "Perawatan diri dapat dimulai dengan menjaga kebersihan mulut dan gigi dengan rutin menggosok gigi dan melakukan pemeriksaan ke dokter gigi minimal 6 bulan sekali, menghentikan kebiasaan merokok, menggunakan pakaian yang nyaman dan menyerap keringat, dan rajin mengganti pakaian, pakaian dalam, dan kaos kaku, secara teratur.",
+      "imgUrl": "https://i.ibb.co/Cbd8Q6c/Oral-candidiasis-causes-types-and-treatment-SS20-scaled.jpg"
+    },
+    {
+      "id": "a07",
+      "title": "Contact Dermatitis",
+      "penyebab": "Disebabkan ketika kulit terpapar dan terkena zat tertentu yang menyebabkan reaksi alergi atau iritasi.",
+      "gejala": "Kulit akan terasa kering, melepuh, berwarna kemerahan, tampak gelap, kemudian kulit juga akan merasakan gatal yang hebat, perih, mulai sensitif terhadap cahaya matahari. dan dapat terjadi Pembengkakan pada mata, muka, atau selangkangan.",
+      "cara": "Dapat mengenakan pakaian pelindung untuk mengurangi kontak dengan zat penyebab penyakit ini serta sinar matahari. lalu menggunakan pelembab untuk memperbaiki kondisi kulit. dapat menggunakan krim atau obat obatan untuk mengurangi efek ketidaknyamanannya.",
+      "imgUrl": "https://i.ibb.co/zXdcxpq/Contact-dermatitis-around-wound.jpg"
+    },
+    {
+      "id": "a08",
+      "title": "Genital Warts",
+      "penyebab": "Disebabkan oleh virus human papillomavirus (HPV).",
+      "gejala": "Timbulnya tonjolan kulit dengan permukaan yang cenderung kasar. Dapat juga terasa gatal, nyeri dan sensasi terbakar. Dan penyakit yang muncul di liang vagina dapat menyebabkan keputihan dan pendarahan.",
+      "cara": "Untuk mencegah terkenanya penyakit ini dapat melakukan vaksin HPV serta berhati hati dalam berhubungan seksual. jika sudah terkena dapat diobati dengan menggunakan obat salep/krim seperti asam trikloroasetat, serta prosedur operasi seperti krioterapi.",
+      "imgUrl": "https://i.ibb.co/XzZJX36/anal-warts.jpg"
+    },
+    {
+      "id": "a09",
+      "title": "Granuloma Annulare",
+      "penyebab": "Dapat disebabkan oleh infeksi seperti hepatitis, gigitan serangga, vaksinasi, paparan sinar matahari, obat obatan tertentu, dan cedera ringan pada kulit.",
+      "gejala": "Umumnya akan muncul benjolan-benjolan dengan bintik kuning di puncaknya, seperti bisul dimana benjolan bisa mengeluarkan cairan bening, membentuk keropeng atau koreng, dan meninggalkan bekas luka.",
+      "cara": "Untuk meredakan penyakit ini dapat menggunakan krim anjuran dokter, pemberian ice pack pada daerah ruam untuk meredakan gejala, terapi sinar dan obat obatan sesuai anjuran dokter.",
+      "imgUrl": "https://i.ibb.co/VMyntLL/granuloma.jpg"
+    },
+    {
+      "id": "a10",
+      "title": "Herpes",
+      "penyebab": "Disebabkan oleh virus herpes simpleks.",
+      "gejala": "Timbulnya pelepuhan pada kulit yang berwarna kemerahan dan berisi cairan. Dan juga terasa nyeri dan gatal pada luka terinfeksi.",
+      "cara": "Jika sudah terkena harus segera konsultasi terhadap dokter, umumnya akan diberi obat antivirus untuk mengurangi kemampuan dari virus itu untuk menyebar.",
+      "imgUrl": "https://i.ibb.co/qd2YJBt/herpes-simplex.jpg"
+    },
+    {
       "id": "a11",
-      "title": "urticaria hives",
-      "content": "urticaria hives disebabkan karena terpicu oleh reaksi terhadap makanan atau obat obatan tertentu serta iritasi. Gejala: muncul berkas yang terasa gatal, menonjol, dan berwarna merah pada kulit. Penanggulangan awal: biasanya dapat hilang dengan sendirinya, tetapi terdapat obat yang dapat membantu mengurangi gejalanya (antihistamin). serta dapat menggunakan kompres dingin untuk mengurangi iritasinya.",
-      "imgUrl": "https://www.nhsinform.scot/media/6589/hives-1.jpg?anchor=center&mode=crop&width=800&height=480&rnd=132896571010000000"
+      "title": "HIV/AIDS",
+      "penyebab": "Disebabkan oleh infeksi HIV (Human Immunodeficiency Virus).",
+      "gejala": "Timbulnya ruam berbintik merah dengan benjolan kecil serta terasa gatal.",
+      "cara": "Jika sudah terkena dapat menggunakan obat golongan antihistamin, dan jika sudah parah segera konsultasi ke dokter. kemudian jangan terkena paparan sinar matahari secara langsung dan jangan mandi air hangat.",
+      "imgUrl": "https://i.ibb.co/SXQMgkJ/ca1211aids-shingles-214871.jpg"
     },
     {
       "id": "a12",
-      "title": "atopic dermatitis",
-      "content": "atopic dermatitis disebabkan oleh faktor genetic, lingkungan, imunologi, gangguan fungsi pelindung kulit, dan infeksi. Gejala: munculnya ruam yang mengeluarkan cairan, kulit kering dan bersisik, kulit di telapak tangan atau area bawah mata mengkerut, kulit di sekitar mata lebih gelap, dan kulit dapat pecah-pecah serta mengeluarkan darah. Penanggulangan awal: rajin membersihkan perlengkapan tidur, menggunakan selimut jika tidak tahan dingin, dan bersihkan rumah secara berkala. jika sudah terkena, dapat mengurangi gejala dengan mandi air hangat dan menggunakan obat salep.",
-      "imgUrl": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/06/10120936/Dermatitis-Atopik_Halodoc.jpg.webp"
+      "title": "Impetigo",
+      "penyebab": "Disebabkan oleh bakteri staphylococcus pyogenes atau aureus.",
+      "gejala": "Bercak kemerahan yang terasa gatal disekitar mulut atau hidung, kulit disekitar luka mengalami iritasi, dan terbentuknya koreng berwarna kuning kecokelatan di sekitar luka.",
+      "cara": "Rajin mencuci tangan, menutup luka bakteri, rajin memotong kuku, dan tidak menggaruk pada bagian infeksi.",
+      "imgUrl": "https://i.ibb.co/0hBh4vJ/Impetigo.jpg"
     },
     {
       "id": "a13",
-      "title": "bullous",
-      "content": "bullous disebabkan oleh penyakit autoimun yang mana sistem kekebalan tubuh berbalik menyerang jaringan kulit kita. Gejala: pertama berubahnya warna kulit menjadi kemerahan, kehitaman, dan terasa gatal yang umumnya muncul di bagian lipatan kulit dan kemudian setelah beberapa minggu atau bulan, pada permukaan kulit tersebut muncul luka lepuh yang berisi cairan bening bercampur darah. Penanggulangan awal: hindari mengonsumsi makanan keras atau renyah, hindari aktivitas yang dapat melukai kulit, dan kelola stress dengan baik. jika sudah terkena, dapat menggunakan obat rekomendasi dokter yang dapat membantu meredakan gejala.",
-      "imgUrl": "https://www.bmj.com/content/bmj/375/bmj.n2553/F1.medium.jpg"
+      "title": "Keratoacanthoma",
+      "penyebab": "Disebabkan oleh pertumbuhan sel yang tidak normal karena cedera kulit dan sering terkena paparan sinar matahari.",
+      "gejala": "Timbulnya benjolan berbentuk kubah dengan ukuran umum 1-3 inci dan memiliki sumbatan keras ditengah.",
+      "cara": "Jika sudah terkena dapat menggunakan obat antitumor, melakukan kemoterapi dan jika sudah buruk dilakukan operasi pengangkatan.",
+      "imgUrl": "https://i.ibb.co/Yks6jGs/Keratoacanthoma.jpg"
     },
-
     {
       "id": "a14",
-      "title": "exanthems",
-      "content": "exanthems disebabkan oleh hal di luar penyakit umum seperti gigitan serangga, terbakar sinar matahari, atau efek pengobatan. Gejala: munculnya ruam pada permukaan kulit yang menyebar luas, dapat mengalami nyeri, demam, dan batuk. Penanggulangan awal: dapat mengonsumsi parasetamol yang dapat meredakan demam serta rasa ketidak nyamannya, kemudian banyak minum air putih dan istirahat.",
-      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZF_0Gc9UWD-ZZSfSAEPSMDEKsI_ZgJbNWHw&usqp=CAU"
+      "title": "Lichen Planus",
+      "penyebab": "Disebabkan oleh gangguan pada sistem kekebalan tubuh yang menyerang sel-sel kulit atau selaput lendir yang sehat.",
+      "gejala": "Munculnya ruam kulit berwarna merah keunguan dan menonjol pada kulit, kulit akan tampak bersisik, akan terasa gatal pada permukaan kulit. Munculnya bercak putih di mulut atau vagina yang dapat disertai rasa nyeri. Mulut akan terasa kering dan pahit, lalu dapat terjadi kerusakan atau kehilangan pada kuku, dan mengalami kebotakan pada kepala.",
+      "cara": "Untuk perawatan diri dalam rumah yang dapat membantu mengurangi gejala diantaranya yaitu jangan menggaruk ruam yang terasa gatal untuk mencegah iritasi pada kulit, mengompres dengan air dingin, dan menggunakan lotion pelembab setelah mandi. Untuk bagian infeksi pada mulut dapat dimulai dengan rajin menjaga kebersihan mulut dan gigi, serta jangan merokok, minum alkohol, dan mengonsumsi makanan minuman pedas atau asam. Untuk pengobatan dari dokter bisa seperti krim, obat, atau fototerapi.",
+      "imgUrl": "https://i.ibb.co/c8zJ6dW/lichen-planus.jpg"
     },
-
     {
       "id": "a15",
-      "title": "herpes",
-      "content": "herpes disebabkan oleh virus herpes simpleks. Gejala: timbulnya pelepuhan pada kulit yang berwarna kemerahan dan berisi cairan. dan juga terasa nyeri dan gatal pada luka terinfeksi. Penanggulangan awal: jika sudah terkena harus segera konsultasi terhadap dokter, umumnya akan diberi obat antivirus untuk mengurangi kemampuan dari virus itu untuk menyebar.",
-      "imgUrl": "https://cdn1-production-images-kly.akamaized.net/44MIo0rhgUjXxG5FnhMoPd9W2KI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1750425/original/074240700_1508923615-3__1280px-Herpes_labialis_-_opryszczka_wargowa__WC.jpg"
+      "title": "Lichen Sclerosus",
+      "penyebab": "Dapat disebabkan oleh sistem kekebalan tubuh yang menyerang jaringan kulit yang sehat, serta juga dapat diduga dikarenakan ketidakseimbangan hormon.",
+      "gejala": "Kulit akan terasa nyeri dengan warnanya yang kemerahan pada tempat yang terinfeksi, kemudian pada kemaluan akan merasakan rasa gatal yang hebat. Lalu pada bercak infeksi dapat muncul robekan kulit yang berdarah dan pelepuhan pada luka terbuka yang berdarah jika sudah parah kondisinya.",
+      "cara": "Untuk pengobatannya dapat dimulai dengan mencuci secara perlahan area yang terinfeksi 1 - 2 kali sehari dengan sabun yang tidak mengandung pewangi atau deterjen, hindari menggaruk pada area penyakitnya walaupun terasa gatal, serta jangan menggunakan pakaian yang sempit serta lembab. Dengan konsultasi dari dokter dapat menggunakan krim atau salep untuk meredakan gatal memperbaiki kondisi kulit.",
+      "imgUrl": "https://i.ibb.co/rp4X9M1/lichen-sclerosus.jpg"
     },
-
     {
       "id": "a16",
-      "title": "hiv/aids",
-      "content": "hiv/aids disebabkan oleh infeksi virus. Gejala: timbulnya ruam berbintik merah dengan benjolan kecil serta terasa gatal. Penanggulangan awal: jika sudah terkena dapat menggunakan obat golongan antihistamin, dan jika sudah parah segera konsultasi ke dokter. kemudian jangan terkena paparan sinar matahari secara langsung dan jangan mandi air hangat.",
-      "imgUrl": "https://image.slidesharecdn.com/sosialisasihiv-aids-160923012704/85/sosialisasi-hiv-aids-10-320.jpg?cb=1474594488"
+      "title": "Lupus",
+      "penyebab": "Disebabkan oleh sistem kekebalan tubuh yang terganggu.",
+      "gejala": "Badan mudah lelah, demam, nyeri pada sendi, dan muncul ruam pada kulit tubuh.",
+      "cara": "Batasi terpaparnya kulit dari matahari, hindari stress dan obat-obatan tertentu, berhenti merokok/jangan merokok, olahraga secara teratur, dan melakukan diet nutrisi.",
+      "imgUrl": "https://i.ibb.co/6Xd5YhZ/lupus-on-skin.jpg"
     },
-
     {
       "id": "a17",
-      "title": "actinic keratosis",
-      "content": "actinic keratosis disebabkan oleh paparan sinar ultraviolet yang berlebihan. Gejala: kulit terasa kasar, kering, dan bersisik dengan ukuran yang relatif kecil. pada bagian yang terinfeksi, berwarna merah kecoklatan serta terasa gatal atau sensasi terbakar. Penanggulangan awal: untuk mengurangi terkenanya penyakit ini dapat dengan menghindari paparan ultraviolet secara langsung, dan jika sudah terkena dapat menggunakan obat yang dianjurkan oleh dokter, melakukan terapi, atau paling parah melakukan operasi.",
-      "imgUrl": "https://asset.kompas.com/crops/XKCCXTFc5kzn3VM79WSj7SGtte4=/0x118:1000x784/750x500/data/photo/2021/11/14/61913eccedbe5.jpg"
+      "title": "Melanoma",
+      "penyebab": "Disebabkan oleh Sinar UV yang merusak DNA dalam sel-sel kulit.",
+      "gejala": "Timbulnya tahi lalat yang membesar, perubahan warna pada tahu lalatnya, dan peradangan disekitar tahi lalat.",
+      "cara": "Segera kontak dokter terkait, pelaksanaan operasi, atau melakukan terapi kemoterapi atau radioterapi.",
+      "imgUrl": "https://i.ibb.co/Xp33QyT/kanker-melanoma111.jpg"
     },
-
     {
       "id": "a18",
-      "title": "stasis dermatitis",
-      "content": "stasis dermatitis disebabkan oleh penyumbatan pada pembuluh darah vena yang mengakibatkan aliran darah dan menciptakan tekanan berlebih pada kulit. Gejala: munculnya ruam berwarna kemerahan, kulit terasa kering dan berkerak, kaki terasa sakit, dan kulit akan terasa sangat gatal. Penanggulangan awal: penanganan yang dapat dilakukan sendiri yaitu jangan berdiri atau duduk terlalu lama, rajin olahraga untuk memperlancar aliran darah, dan dapat mengangkat kaki lebih tinggi dari posisi jantung untuk memperlancar serta mencegah penumpukan darah pada pembuluh darah.",
-      "imgUrl": "https://nationaleczema.org/wp-content/uploads/2020/07/stasis-dermatitis-and-ulcers-on-feet.jpg"
+      "title": "Molluscum Contagiosum",
+      "penyebab": "Disebabkan oleh virus molluscum contagiosum.",
+      "gejala": "Munculnya benjolan kecil seperti biji kacang, bisa muncul di wajah, leher, ketiak, perut, kelamin, dan tungkai. umumnya berwarna kulit, putih, atau merah muda. serta ada titik kecil berwarna putih kekuningan ditengah bintik.",
+      "cara": "Dapat mengolesi dibagian bintik menggunakan krim atau salep sesuai anjuran, scraping atau mengikis bintil menggunakan alat medis, dan membakar dengan terapi sinar laser.",
+      "imgUrl": "https://i.ibb.co/jzX2jCj/Molluscum-contagiosum.jpg"
+    },
+    {
+      "id": "a19",
+      "title": "Morphea",
+      "penyebab": "Disebabkan oleh gangguan sistem kekebalan tubuh.",
+      "gejala": "Munculnya bercak oval kemerahan atau keunguan pada kulit, terutama di perut atau dada. terjadinya perubahan warna kulit lebih terang atau keputihan secara bertahap dengan pola warna tampak lurus, terutama pada lengan, dahi, atau tungkai serta bercak pada kulit yang terkena menjadi kencang, menebal, dan berkilau.",
+      "cara": "Untuk perawatan diri bisa memulai dengan menggunakan tabir surya setiap ingin keluar ruangan, hindari mandi dengan air panas terlalu lama, gunakan produk pelembab setelah mandi serta penggunaan produk lain berbahan dasar alami, selalu menjaga kelembapan udara, dan rajin berolahraga. Jika sudah cukup parah, dapat berkonsultasi dengan dokter dimana dapat menggunakan obat dengan resep khusus serta dapat juga melakukan terapi cahaya.",
+      "imgUrl": "https://i.ibb.co/m9VsCTH/morphea.jpg"
+    },
+    {
+      "id": "a20",
+      "title": "Onychomycosis",
+      "penyebab": "Disebebkan oleh 3 jenis organisme yaitu dermatophytes atau jamur yang menginfeksi rambut, kulit, dan kuku. Kemudian yeast yang merupakan jamur lain yang tidak termasuk dermatophytes serta Candida albicans.",
+      "gejala": "Kuku orang yang terinfeksi akan mulai menebal, berubah warna serta bentuk dan jika semakin parah akan terasa nyeri.",
+      "cara": "Untuk mengurangi terkenanya penyakit ini dapat lebih merawat kuku, sering mencuci tangan dan kaki hingga bersih, hindari berjalan kaki tanpa alas kaki, jangan berlama lama dalam alas kaki tertutup, serta penggunaan semprotan anti jamur pada alas kaki yang sering digunakan. Jika sudah terkena dapat menggunakan obat anti jamur dari resep dokter atau jika sudah parah dapat dilakukan pembedahan.",
+      "imgUrl": "https://i.ibb.co/s2hq6V4/Onychomycosis.png"
+    },
+    {
+      "id": "a21",
+      "title": "Phototoxic Reaction",
+      "penyebab": "Disebabkan oleh reaksi bahan kimia pada tubuh dan berinteraksi dengan sinar UV matahari.",
+      "gejala": "Orang yang terkena akan merasakan sensasi terbakar dan menyengat, umumnya juga akan muncul kemerahan pada permukaan kulit dalam waktu 24 jam setelah terkena sinar matahari.",
+      "cara": "Jika sudah mulai terjadi gejalanya, dapat menggunakan obat dari konsultasi dengan dokter. Menggunakan pelindung sinar matahari untuk mengurangi efek lanjut dari penyakit ini. Penggunaan kompres dingin juga dapat mengurangi efek ketidaknyamanannya.",
+      "imgUrl": "https://i.ibb.co/pQ3knyL/phototoxic.jpg"
+    },
+    {
+      "id": "a22",
+      "title": "Pityriasis Rosea",
+      "penyebab": "Diduga disebabkan oleh infeksi virus, terutama dari golongan virus herpes.",
+      "gejala": "Penderita akan mengalami demam tinggi, kehilangan nafsu makan, mengalami gangguan pencernaan, nyeri sendi dan sakit kepala. Dapat muncul noda merah berbentuk oval menyerupai tambalan di area tersembunyi seperti ketiak dan area lainnya dan bercak merah yang menyebar hingga ke dada, punggung dan leher.",
+      "cara": "Untuk perawatan diri sendiri dapat dimulai dari sering menggunakan pelembab, mengompres kulit dengan air dingin, berendam dengan campuran oatmeal khusus, serta mengonsumsi obat sesuai anjuran dokter. Untuk penanganan lainnya yaitu terapi sinar ultraviolet.",
+      "imgUrl": "https://i.ibb.co/7gpdGXF/pityriasis-rosea-1200x813.jpg"
+    },
+    {
+      "id": "a23",
+      "title": "Psoriasis",
+      "penyebab": "Disebabkan oleh autoimun tubuh yang menyerang sel kulit sehat.",
+      "gejala": "Timbul bercak merah dan diatas bercak tersebut terdapat sisik putih yang tebal serta berlapis-lapis.",
+      "cara": "Menggunakan obat oles atau krim, melakukan terapi cahaya, dan jika sudah parah, mengonsumsi obat dari arahan dokter.",
+      "imgUrl": "https://i.ibb.co/LNnxTBd/psoriasis-on-persons-elbow.jpg"
+    },
+    {
+      "id": "a24",
+      "title": "Rosacea",
+      "penyebab": "Disebabkan oleh bakteri helicobacter plylori.",
+      "gejala": "Kulit pada bagian hidung, pipi, dagu, dan dahi menjadi kemerahan. Dan juga dapat menimbulkan benjolan kecil, merah, dan bernanah.",
+      "cara": "Dapat menggunakan tabir pelembab untuk kulit sensitif dan kering, dan obat yang dapat mengurangi kemerahan pada kulit.",
+      "imgUrl": "https://i.ibb.co/bJj8tYd/rosacea.png"
+    },
+    {
+      "id": "a25",
+      "title": "Scabies",
+      "penyebab": "Disebabkan oleh Sarcoptes Scanbie Var Hominis.",
+      "gejala": "Kulit terasa sangat gatal pada malam hari. Gatal ini disertai dengan kemunculan ruam berbintik yang menyerupai jerawat atau lepuhan kecil bersisik.",
+      "cara": "Penyakit ini mudah menular dari satu ke yang lain, jadi selalu menjaga kebersihan dan lingkungan sekitar juga.",
+      "imgUrl": "https://i.ibb.co/MCybWVk/scabies.png"
+    },
+    {
+      "id": "a26",
+      "title": "Seborrheic Dermatitis",
+      "penyebab": "Diduga disebabkan oleh jamur Malassezia furfur dan peradangan yang terkait dengan psoriasis.",
+      "gejala": "Pada permukaan kulit akan berwarna kemerahan, terasa gatal, dan bersisik. timbulnya ketombe akibat kulit yang terkelupas yang dapat terjadi di kulit kepala atau daerah kumis, jenggot, dada, serta alis dan muncul ruam yang berbentuk bulat atau oval.",
+      "cara": "Untuk menghambat terjadinya kembali penyakit ini, dapat dilakukan keramas dengan sampo antijamur selama 5 menit, lalu bilas hingga bersih. Untuk membersihkan tubuh, gunakan sabun yang dapat menghilangkan minyak untuk mencegah timbulnya bakteri dan jamur. lalu angan gunakan produk perawatan kulit dan rambut yang mengandung alkohol, dan Hentikan penggunaan hair spray, gel, atau produk penataan rambut yang dapat memicu kambuhnya penyakit ini. kemudian untuk membantu mengobati dan meredakan penyakit ini dapat menggunakan obat dari anjuran dokter serta menggunakan shampo anti ketombe yang benar. serta perawatan diri seperti tidak menggaruk bagian tubuh yang terkena dermatitis seboroik dan menggunakan baju dengan bahan katun yang halus untuk mengurangi iritasi di permukaan kulit.",
+      "imgUrl": "https://i.ibb.co/ngHbGZP/seborr2.jpg"
+    },
+    {
+      "id": "a27",
+      "title": "Seborrheic Keratosis",
+      "penyebab": "Disebabkan faktor genetik, sering terkena UV, dan faktor usia.",
+      "gejala": "Terjadi pembengkakan yang terasa kasar, tebal, berbentuk oval umumnya, dan berwarna coklat, putih, atau kuning pada kulit.",
+      "cara": "Melakukan terapi krioterapi, dan terapi laser.",
+      "imgUrl": "https://i.ibb.co/M9nbK2g/seborr-k.jpg"
+    },
+    {
+      "id": "a28",
+      "title": "Stasis Dermatitis",
+      "penyebab": "Disebabkan oleh penyumbatan pada pembuluh darah vena yang mengakibatkan aliran darah dan menciptakan tekanan berlebih pada kulit.",
+      "gejala": "Munculnya ruam berwarna kemerahan, kulit terasa kering dan berkerak, kaki terasa sakit, dan kulit akan terasa sangat gatal.",
+      "cara": "Penanganan yang dapat dilakukan sendiri yaitu jangan berdiri atau duduk terlalu lama, rajin olahraga untuk memperlancar aliran darah, dan dapat mengangkat kaki lebih tinggi dari posisi jantung untuk memperlancar serta mencegah penumpukan darah pada pembuluh darah.",
+      "imgUrl": "https://i.ibb.co/PNGVH3N/stasis-dermatitis-chronic-high.jpg"
+    },
+    {
+      "id": "a29",
+      "title": "Tuberous Sclerosis",
+      "penyebab": "Disebabkan oleh perubahan atau mutasi genetik yang mengendalikan pertumbuhan sel dalam tubuh dan terjadinya tumor.",
+      "gejala": "Penderita akan mengalami penebalan di beberapa area kulit, muncul bercak berwarna terang, tumbuh jaringan di bawah atau di sekitar kuku, dan muncul benjolan kecil menyerupai jerawat di wajah.",
+      "cara": "Untuk penanganannya, pertama dapat meminum obat obatan untuk mengatasi gejala dan komplikasi yang akan timbul, kemudian dilaksanakan operasi pengangkatan tumor. Lalu untuk pendukung lain dapat dilakukan terapi seperti fisioterapi agar penderita tetap dapat melaksanakan kegiatan sehari hari seperti biasa.",
+      "imgUrl": "https://i.ibb.co/zHN7g3p/tuberous-sclerosis.jpg"
+    },
+    {
+      "id": "a30",
+      "title": "Tinea",
+      "penyebab": "Disebabkan oleh jamur.",
+      "gejala": "Kulit menjadi rusak dan terasa gatal.",
+      "cara": "Dapat mengolesi dengan salep antijamur serta meminum obat antijamur.",
+      "imgUrl": "https://i.ibb.co/B3cGgmk/Tinea-Korporis-dan-Kruris.jpg"
+    },
+    {
+      "id": "a31",
+      "title": "Vascular Tumor",
+      "penyebab": "Umumnya terjadi pada anak-anak yaitu jenis hemangioma yang disebabkan oleh kelahiran yang prematur, berat badan yang rendah, faktor genetik, dan mengalami gangguan saat dalam kandungan.",
+      "gejala": "Munculnya benjolan kenyal berwarna merah yang bisa tumbuh di mana saja, termasuk wajah, leher, kulit kepala, dada, punggung bayi, bahkan mata bayi. Dan untuk remaja atau dewasa jika menderita penyakit ini juga akan muncul benjolan yang sama dan tempat tumbuh yang sebagian sama juga.",
+      "cara": "Jika sudah terkena, segera konsultasikan ke dokter dimana umumnya akan diberi obat untuk menghambat dalam obat minum atau suntik, dan jika sudah parah dapat dilakukan terapi laser.",
+      "imgUrl": "https://i.ibb.co/RcXVwpB/vascular.png"
+    },
+    {
+      "id": "a32",
+      "title": "Urticaria",
+      "penyebab": "Disebabkan karena terpicu oleh reaksi terhadap makanan atau obat obatan tertentu serta iritasi.",
+      "gejala": "Muncul berkas yang terasa gatal, menonjol, dan berwarna merah pada kulit.",
+      "cara": "Biasanya dapat hilang dengan sendirinya, tetapi terdapat obat yang dapat membantu mengurangi gejalanya (antihistamin). Serta dapat menggunakan kompres dingin untuk mengurangi iritasinya.",
+      "imgUrl": "https://i.ibb.co/wStQV34/urticaria.jpg"
+    },
+    {
+      "id": "a33",
+      "title": "Vasculitis",
+      "penyebab": "Dapat disebabkan oleh penyakit autoimun, seperti rheumatoid arthritis, lupus, atau skleroderma dan juga reaksi alergi terhadap penggunaan obat-obatan tertentu.",
+      "gejala": "Umumnya penderita akan merasakan pegal-pegal, berkeringat di malam hari, kelelahan, munculnya ruam, demam, hilangnya denyut nadi pada tungkai tubuh, gangguan saraf seperti kebas atau lemas, dan turunnya berat badan.",
+      "cara": "Untuk mencegah penyakit ini terjadi dapat dilakukannya mempertahankan berat badan ideal, mengonsumsi makanan bergizi seimbang seperti sayur dan buah-buahan, rajin berolahraga, mengelola stress dengan baik, dan berhenti merokok. Jika sudah terkena dapat meminum obat obatan sesuai anjuran dokter dan jika sudah parah harus dilaksanakan operasi untuk mencegah pecahnya pembuluh darah yang menyempit.",
+      "imgUrl": "https://i.ibb.co/pwkspGj/CSV-VASC.jpg"
+    },
+    {
+      "id": "a34",
+      "title": "Viral Exanthem",
+      "penyebab": "Disebabkan oleh infeksi virus seperti campak, rubella, roseola, enterovirus, adnovirus, mononukleosis, dan jenis infeksi herpes. dapat juga dikarenakan karena respon imun, dan reaksi toksin oleh suatu organisme pada kulit.",
+      "gejala": "Umumnya akan muncul bintik bintik kemerahan, bercak, dan dapat terasa gatal. bisa juga yang terinfeksi merasakan demam, sakit kepala, kehilangan selera makan, sakit perut, dan nyeri otot.",
+      "cara": "Hindari menyentuh mata, hidung, atau mulut dengan tangan kotor, bersihkan barang yang sering kita gunakan, jaga jarak dengan orang sakit, dan rajin mencuci tangan sampai bersih.",
+      "imgUrl": "https://i.ibb.co/bg43sP7/viral-exanthem-doktersehat.jpg"
+    },
+    {
+      "id": "a35",
+      "title": "Vitiligo",
+      "penyebab": "Disebabkan oleh kondisi kulit yang tidak dapat memproduksi melamin yang menentukan warna kulit dan tidak dapat melindungi kulit dari efek buruk sinar matahari.",
+      "gejala": "Hilangnya pigmen warna di rambut, janggut, bulu mata, dan alis (berwarna seperi keubanan). Hilangnya juga pigmen warna pada bagian hitam mata, bagian dalam mulut dan hidung, serta di area kelamin. Kemudian bagian tengah pada bercaknya berwarna putih dengan tepiannya yang berwarna kecoklatan atau kemerahan.",
+      "cara": "Untuk perawatan diri dan mengurangi terkenanya penyakit ini dapat menggunakan tabir surya, tetapi jika sudah memburuk direkomendasikan dilakukan terapi cahaya atau terapi laser, kemudian juga dapat dilakukan operasi pencakokan kulit.",
+      "imgUrl": "https://i.ibb.co/23XySMv/vitiligo-b-orig-high.jpg"
     }
-
   ]
 }

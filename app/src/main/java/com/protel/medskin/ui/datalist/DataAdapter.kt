@@ -29,7 +29,6 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
             binding.apply {
 
                 titleData.text = data.title
-                subData.text = data.description
                 Glide.with(itemView)
                     .load(data.imgPath)
                     .transition(DrawableTransitionOptions.withCrossFade())

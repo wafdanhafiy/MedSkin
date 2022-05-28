@@ -19,8 +19,14 @@ data class DataEntity(
     @ColumnInfo(name = "title")
     val title: String,
 
-    @ColumnInfo(name = "content")
-    val description: String,
+    @ColumnInfo(name = "penyebab")
+    val penyebab: String,
+
+    @ColumnInfo(name = "gejala")
+    val gejala: String,
+
+    @ColumnInfo(name = "cara")
+    val cara: String,
 
     @ColumnInfo(name = "imgPath")
     val imgPath: String

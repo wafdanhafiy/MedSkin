@@ -7,6 +7,8 @@ import kotlinx.parcelize.Parcelize
 data class DataResponse (
     val id: String,
     val title: String,
-    val description: String,
+    val penyebab: String,
+    val gejala: String,
+    val cara: String,
     val imgPath: String
 ):Parcelable

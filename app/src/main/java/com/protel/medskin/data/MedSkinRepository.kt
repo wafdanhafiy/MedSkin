@@ -59,7 +59,9 @@ class MedSkinRepository private constructor(private val remoteDataSource: Remote
                 for (response in dataResponse) {
                     val data = DataEntity(response.id,
                         response.title,
-                        response.description,
+                        response.penyebab,
+                        response.gejala,
+                        response.cara,
                         response.imgPath)
 
                     dataList.add(data)

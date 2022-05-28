@@ -30,7 +30,9 @@ class DetailData : AppCompatActivity() {
     private fun populateDataList(data: DataEntity?) {
         data?.let {
             binding.titleData.text = data.title
-            binding.tvContent.text = data.description
+            binding.penyebabContent.text = data.penyebab
+            binding.gejalaContent.text = data.gejala
+            binding.caraContent.text = data.cara
 
             Glide.with(this)
                 .load(data.imgPath)

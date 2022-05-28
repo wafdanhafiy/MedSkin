@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="penyebab">Penyebab</string>
+    <string name="gejala">Gejala</string>
+    <string name="cara_penanggulangan">Cara Penanggulangan</string>
+</resources>
