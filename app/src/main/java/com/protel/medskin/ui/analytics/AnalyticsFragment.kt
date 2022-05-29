@@ -23,11 +23,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.protel.medskin.BuildConfig
 import com.protel.medskin.databinding.FragmentAnalitycsBinding
 import com.protel.medskin.ui.detail.DetailResultActivity
+import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence
+import uk.co.deanwild.materialshowcaseview.ShowcaseConfig
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
-
 
 private const val FILE_NAME = "photo.jpg"
 private const val REQUEST_CODE = 42
@@ -127,6 +128,7 @@ class AnalyticsFragment : Fragment() {
 
         return root
     }
+
      private fun captureImage(){
          val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
          photoFile = getPhotoFile(FILE_NAME)
@@ -144,8 +146,6 @@ class AnalyticsFragment : Fragment() {
              Toast.makeText(context, "unable to open camera", Toast.LENGTH_SHORT).show()
          }
      }
-
-
 
     private fun getOutputMediaFileUri(type: Int): Uri {
         return Uri.fromFile(getOutputMediaFile(type))
@@ -193,6 +193,38 @@ class AnalyticsFragment : Fragment() {
         }
         return result
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        showCaseAnalytics()
+    }
+
+    private fun showCaseAnalytics() {
+        val config = ShowcaseConfig()
+        config.delay = 100
+        val sequence = MaterialShowcaseSequence(activity, SHOWCASE_ID)
+
+        sequence.setConfig(config)
+
+        sequence.addSequenceItem(
+            binding.takeImageShowCase,
+            "Tekan 'Ambil Gambar' untuk mengaktifkan kamera dan mengambil foto", "Mengerti"
+        )
+
+        sequence.addSequenceItem(
+            binding.choseImageShowCase,
+            "Tekan 'Pilih Gambar' untuk mengambil gambar dari penyimpanan lokal", "Mengerti"
+        )
+
+
+        sequence.addSequenceItem(
+            binding.processShowCase,
+            "Tekan 'Oke' untuk menjalankan prediagnosa", "Mengerti"
+        )
+
+        sequence.start()
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -214,7 +246,6 @@ class AnalyticsFragment : Fragment() {
                 }
 
                 GALLERY_REQUEST_CODE -> {
-
 
                     val selectedImage: Uri = data?.data ?: return
                     val mBitmap: Bitmap = MediaStore.Images.Media.getBitmap(context?.contentResolver, selectedImage)
