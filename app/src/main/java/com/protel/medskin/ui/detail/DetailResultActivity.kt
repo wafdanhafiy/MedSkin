@@ -18,7 +18,6 @@ import com.protel.medskin.ui.nearby.NearByNotActivity
 import org.tensorflow.lite.support.image.TensorImage
 
 
-
 class DetailResultActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailResultBinding
 
@@ -38,7 +37,6 @@ class DetailResultActivity : AppCompatActivity() {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
 
-
         val picture = intent.getStringExtra("picture")
         val pictureGal = intent.getStringExtra("picturegal")
 
@@ -52,15 +50,12 @@ class DetailResultActivity : AppCompatActivity() {
         val ims = uri?.let { contentResolver.openInputStream(it) }
         val ppp = BitmapFactory.decodeStream(ims)
 
-
         if (apa == apa) {
             binding.gambarinfo.setImageBitmap(apa)
         }
         if (ppp == ppp) {
             binding.gambarinfo.setImageBitmap(ppp)
         }
-
-
 
         if (apa == null) {
             scans(ppp)
@@ -87,7 +82,6 @@ class DetailResultActivity : AppCompatActivity() {
         val outputs = model.process(image)
         val probability = outputs.probabilityAsCategoryList
         val hasil = probability.maxByOrNull { it.score }?.label ?: "NO_SKINS"
-
 
         viewModel.setSelectedskin(hasil)
         viewModel.getSkin()?.let { populateskins(it) }
@@ -118,8 +112,6 @@ class DetailResultActivity : AppCompatActivity() {
 //            binding.searchbtn.visibility = View.GONE
 //            binding.infoframe.visibility = View.GONE
 //            binding.tombolcari.visibility=View.GONE
-//
-//
 //        }
     }
 

@@ -14,8 +14,10 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-<<<<<<< Updated upstream
-            android:layout_height="305dp"
+
+            android:layout_height="305dp" >
+
+        </ImageView>
 =======
             android:layout_height="250dp"
 >>>>>>> Stashed changes

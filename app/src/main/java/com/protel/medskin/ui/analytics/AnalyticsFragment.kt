@@ -208,12 +208,12 @@ class AnalyticsFragment : Fragment() {
 
         sequence.addSequenceItem(
             binding.takeImageShowCase,
-            "Tekan 'Ambil Gambar' untuk mengaktifkan kamera dan mengambil foto", "Mengerti"
+            "Tekan 'Ambil Gambar' untuk mengaktifkan kamera dan mengambil foto", "Oke, lanjut"
         )
 
         sequence.addSequenceItem(
             binding.choseImageShowCase,
-            "Tekan 'Pilih Gambar' untuk mengambil gambar dari penyimpanan lokal", "Mengerti"
+            "Tekan 'Pilih Gambar' untuk mengambil gambar dari penyimpanan lokal", "Oke, lanjut"
         )
 
 
