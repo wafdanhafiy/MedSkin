@@ -21,7 +21,8 @@
         >
 
         <Button
-            android:id="@+id/tombolsearch"
+            android:id="@+id/btn_maps"
+            android:onClick="cobamaps"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Dermatologis Terdekat"
@@ -44,7 +45,8 @@
         >
 
         <Button
-            android:id="@+id/tombolpeta"
+            android:id="@+id/btn_browser"
+            android:onClick="cobabrowser"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Info Lebih Lanjut"

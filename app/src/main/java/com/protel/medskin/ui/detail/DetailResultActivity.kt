@@ -97,44 +97,59 @@ class DetailResultActivity : AppCompatActivity() {
     }
 
     private fun search() {
-        binding.tombolsearch.setOnClickListener {
-
-         val nextintent = Intent(this, NearByActivity::class.java)
-          startActivity(nextintent)
-
-//            binding.gambarinfo.visibility = View.GONE
-//            binding.searchbtn.visibility = View.GONE
-//            binding.infoframe.visibility = View.GONE
-        }
+//        binding.tombolsearch.setOnClickListener {
+//
+//         val nextintent = Intent(this, NearByActivity::class.java)
+//          startActivity(nextintent)
+//
+////            binding.gambarinfo.visibility = View.GONE
+////            binding.searchbtn.visibility = View.GONE
+////            binding.infoframe.visibility = View.GONE
+//        }
     }
 
     private fun notsearch() {
-        binding.tombolsearch.setOnClickListener {
-
-            val nextintent = Intent(this, NearByNotActivity::class.java)
-            startActivity(nextintent)
-
-            binding.gambarinfo.visibility = View.GONE
-            binding.searchbtn.visibility = View.GONE
-            binding.infoframe.visibility = View.GONE
-            binding.tombolcari.visibility=View.GONE
-
-
-        }
+//        binding.tombolsearch.setOnClickListener {
+//
+//            val nextintent = Intent(this, NearByNotActivity::class.java)
+//            startActivity(nextintent)
+//
+//            binding.gambarinfo.visibility = View.GONE
+//            binding.searchbtn.visibility = View.GONE
+//            binding.infoframe.visibility = View.GONE
+//            binding.tombolcari.visibility=View.GONE
+//
+//
+//        }
     }
 
     private fun populateskins(skinsEntity: skinsEntity) {
         with(binding) {
             judul.text = skinsEntity.name
-            penyebab.text=skinsEntity.penyebab
-            gejala.text=skinsEntity.gejala
-            penanggulangan.text=skinsEntity.penanggulangan
-            akurasi.text= skinsEntity.akurasi.toString()
+            penyebab.text = skinsEntity.penyebab
+            gejala.text = skinsEntity.gejala
+            penanggulangan.text = skinsEntity.penanggulangan
+            akurasi.text = skinsEntity.akurasi.toString()
         }
     }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    fun cobamaps(view: View) {
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.co.id/maps/search/Dermatologist/@location"))
+        startActivity(browserIntent)
+    }
+
+    fun cobabrowser(view: View) {
+        with(binding){
+            val BASE_URL = "https://www.google.com/search?q="
+            val path = judul.text
+
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(BASE_URL + path))
+            startActivity(browserIntent)
+        }
     }
 }
