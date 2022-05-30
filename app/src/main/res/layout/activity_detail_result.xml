@@ -66,7 +66,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/avatar_1"
+        android:src="@drawable/avatar_2"
         />
 
     <!--    <Button-->

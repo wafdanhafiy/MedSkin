@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.protel.medskin.R
-import com.protel.medskin.databinding.FragmentArticlesBinding
 import com.protel.medskin.databinding.FragmentInfoBinding
 
 class InfoFragment : Fragment() {

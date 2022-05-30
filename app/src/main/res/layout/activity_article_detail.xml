@@ -15,8 +15,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="305dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/avatar_1"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_2"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_marginTop="200dp"

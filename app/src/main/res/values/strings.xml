@@ -36,5 +36,7 @@
     <string name="gejala">Gejala</string>
     <string name="penyebab">Penyebab</string>
     <string name="cara_penanggulangan">Cara Penanggulangan</string>
+    <string name="tips">Tips</string>
+    <string name="tipsContent">Pastikan gambar penyakit kulit yang diambil atau dipilih memiliki jarak yang cukup dekat dengan kamera.</string>
 
 </resources>
