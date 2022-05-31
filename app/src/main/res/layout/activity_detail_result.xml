@@ -59,15 +59,30 @@
 
     </LinearLayout>
 
-
-    <ImageView
-        android:id="@+id/gambarinfo"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:cardCornerRadius="8dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/avatar_2"
-        />
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/gambarinfo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avatar_2"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
 
     <!--    <Button-->
     <!--        android:id="@+id/searchbtn"-->
