@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_data"
         android:icon="@drawable/ic_baseline_library_books_24"
-        android:title="@string/title_data" />
+        android:title="List" />
 
     <item
         android:id="@+id/navigation_articles"
@@ -19,6 +19,6 @@
     <item
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_baseline_aboutapp_24"
-        android:title="@string/title_info" />
+        android:title="Info" />
 
 </menu>
