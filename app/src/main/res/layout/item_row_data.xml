@@ -56,7 +56,6 @@
             android:maxLines="1"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView2"

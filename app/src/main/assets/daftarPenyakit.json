@@ -226,14 +226,6 @@
     },
     {
       "id": "a29",
-      "title": "Tuberous Sclerosis",
-      "penyebab": "Disebabkan oleh perubahan atau mutasi genetik yang mengendalikan pertumbuhan sel dalam tubuh dan terjadinya tumor.",
-      "gejala": "Penderita akan mengalami penebalan di beberapa area kulit, muncul bercak berwarna terang, tumbuh jaringan di bawah atau di sekitar kuku, dan muncul benjolan kecil menyerupai jerawat di wajah.",
-      "cara": "Untuk penanganannya, pertama dapat meminum obat obatan untuk mengatasi gejala dan komplikasi yang akan timbul, kemudian dilaksanakan operasi pengangkatan tumor. Lalu untuk pendukung lain dapat dilakukan terapi seperti fisioterapi agar penderita tetap dapat melaksanakan kegiatan sehari hari seperti biasa.",
-      "imgUrl": "https://i.ibb.co/zHN7g3p/tuberous-sclerosis.jpg"
-    },
-    {
-      "id": "a30",
       "title": "Tinea",
       "penyebab": "Disebabkan oleh jamur.",
       "gejala": "Kulit menjadi rusak dan terasa gatal.",
@@ -241,20 +233,28 @@
       "imgUrl": "https://i.ibb.co/B3cGgmk/Tinea-Korporis-dan-Kruris.jpg"
     },
     {
-      "id": "a31",
-      "title": "Vascular Tumor",
-      "penyebab": "Umumnya terjadi pada anak-anak yaitu jenis hemangioma yang disebabkan oleh kelahiran yang prematur, berat badan yang rendah, faktor genetik, dan mengalami gangguan saat dalam kandungan.",
-      "gejala": "Munculnya benjolan kenyal berwarna merah yang bisa tumbuh di mana saja, termasuk wajah, leher, kulit kepala, dada, punggung bayi, bahkan mata bayi. Dan untuk remaja atau dewasa jika menderita penyakit ini juga akan muncul benjolan yang sama dan tempat tumbuh yang sebagian sama juga.",
-      "cara": "Jika sudah terkena, segera konsultasikan ke dokter dimana umumnya akan diberi obat untuk menghambat dalam obat minum atau suntik, dan jika sudah parah dapat dilakukan terapi laser.",
-      "imgUrl": "https://i.ibb.co/RcXVwpB/vascular.png"
+      "id": "a30",
+      "title": "Tuberous Sclerosis",
+      "penyebab": "Disebabkan oleh perubahan atau mutasi genetik yang mengendalikan pertumbuhan sel dalam tubuh dan terjadinya tumor.",
+      "gejala": "Penderita akan mengalami penebalan di beberapa area kulit, muncul bercak berwarna terang, tumbuh jaringan di bawah atau di sekitar kuku, dan muncul benjolan kecil menyerupai jerawat di wajah.",
+      "cara": "Untuk penanganannya, pertama dapat meminum obat obatan untuk mengatasi gejala dan komplikasi yang akan timbul, kemudian dilaksanakan operasi pengangkatan tumor. Lalu untuk pendukung lain dapat dilakukan terapi seperti fisioterapi agar penderita tetap dapat melaksanakan kegiatan sehari hari seperti biasa.",
+      "imgUrl": "https://i.ibb.co/zHN7g3p/tuberous-sclerosis.jpg"
     },
     {
-      "id": "a32",
+      "id": "a31",
       "title": "Urticaria",
       "penyebab": "Disebabkan karena terpicu oleh reaksi terhadap makanan atau obat obatan tertentu serta iritasi.",
       "gejala": "Muncul berkas yang terasa gatal, menonjol, dan berwarna merah pada kulit.",
       "cara": "Biasanya dapat hilang dengan sendirinya, tetapi terdapat obat yang dapat membantu mengurangi gejalanya (antihistamin). Serta dapat menggunakan kompres dingin untuk mengurangi iritasinya.",
       "imgUrl": "https://i.ibb.co/wStQV34/urticaria.jpg"
+    },
+    {
+      "id": "a32",
+      "title": "Vascular Tumor",
+      "penyebab": "Umumnya terjadi pada anak-anak yaitu jenis hemangioma yang disebabkan oleh kelahiran yang prematur, berat badan yang rendah, faktor genetik, dan mengalami gangguan saat dalam kandungan.",
+      "gejala": "Munculnya benjolan kenyal berwarna merah yang bisa tumbuh di mana saja, termasuk wajah, leher, kulit kepala, dada, punggung bayi, bahkan mata bayi. Dan untuk remaja atau dewasa jika menderita penyakit ini juga akan muncul benjolan yang sama dan tempat tumbuh yang sebagian sama juga.",
+      "cara": "Jika sudah terkena, segera konsultasikan ke dokter dimana umumnya akan diberi obat untuk menghambat dalam obat minum atau suntik, dan jika sudah parah dapat dilakukan terapi laser.",
+      "imgUrl": "https://i.ibb.co/RcXVwpB/vascular.png"
     },
     {
       "id": "a33",

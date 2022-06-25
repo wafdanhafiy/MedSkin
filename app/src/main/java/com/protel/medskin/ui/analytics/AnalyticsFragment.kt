@@ -7,7 +7,6 @@ import android.database.Cursor
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
@@ -20,178 +19,36 @@ import android.widget.Toast
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.protel.medskin.BuildConfig
 import com.protel.medskin.databinding.FragmentAnalitycsBinding
 import com.protel.medskin.ui.detail.DetailResultActivity
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence
 import uk.co.deanwild.materialshowcaseview.ShowcaseConfig
 import java.io.File
-import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-private const val FILE_NAME = "photo.jpg"
-private const val REQUEST_CODE = 42
+
+private const val REQUEST_CODE = 0
 private const val GALLERY_REQUEST_CODE = 2
 private lateinit var photoFile : File
-private lateinit var galleryphotoFile : File
-private lateinit var FilePhoto : String
 private lateinit var currentPhotoPath : String
 lateinit var bitmap: Bitmap
-
+private const val FILE_NAME = "IMG_"
 
 class AnalyticsFragment : Fragment() {
-    //ImageView mImageview
-    //var imagePicker: ImageView? = null
-    //private var resolver: ContentResolver? = requireActivity().contentResolver
     lateinit var imageView: ImageView
     private lateinit var scanViewModel: AnalyticsViewModel
     private var _binding: FragmentAnalitycsBinding? = null
-    private var fileUri: Uri? = null
-    private var mImageFileLocation = ""
     private val binding get() = _binding!!
 
     companion object {
         const val SHOWCASE_ID = "SHOWCASE_ID_1"
-        const val REQUEST_TAKE_PHOTO = 0
-        const val REQUEST_PICK_PHOTO = 2
-        const val CAMERA_PIC_REQUEST = 1111
 
         private val TAG = AnalyticsFragment::class.java.simpleName
 
         const val MEDIA_TYPE_IMAGE = 1
         private const val IMAGE_DIRECTORY_NAME = "Android File Upload"
 
-        private fun getOutputMediaFile(type: Int): File? {
-
-            val mediaStorageDir = File(
-                Environment
-                    .getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
-                IMAGE_DIRECTORY_NAME
-            )
-            if (!mediaStorageDir.exists()) {
-                if (!mediaStorageDir.mkdirs()) {
-                    Log.d(
-                        TAG, "Oops! Failed create "
-                                + IMAGE_DIRECTORY_NAME + " directory"
-                    )
-                    return null
-                }
-            }
-
-            SimpleDateFormat(
-                "yyyyMMdd_HHmmss",
-                Locale.getDefault()
-            ).format(Date())
-            val mediaFile: File
-            if (type == MEDIA_TYPE_IMAGE) {
-                mediaFile = File(
-                    mediaStorageDir.path + File.separator
-                            + "IMG_" + ".jpg"
-                )
-            } else {
-                return null
-            }
-
-            return mediaFile
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        scanViewModel =
-            ViewModelProvider(this).get(AnalyticsViewModel::class.java)
-
-        _binding = FragmentAnalitycsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        binding.uploadBtn.setOnClickListener {
-
-            //Create an Intent with action as ACTION_PICK
-            val intent = Intent(Intent.ACTION_PICK)
-            // Sets the type as image/*. This ensures only components of type image are selected
-            intent.type = "image/*"
-            //We pass an extra array with the accepted mime types. This will ensure only components with these MIME types as targeted.
-            val mimeTypes = arrayOf("image/jpeg", "image/png")
-            intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
-            // Launching the Intent
-            startActivityForResult(intent, GALLERY_REQUEST_CODE)
-        }
-
-        binding.camBtn.setOnClickListener {
-           captureImage()
-
-        }
-
-        return root
-    }
-
-     private fun captureImage(){
-         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-         photoFile = getPhotoFile(FILE_NAME)
-         val outputUri = FileProvider.getUriForFile(
-             requireActivity(),
-             BuildConfig.APPLICATION_ID + ".provider",
-             photoFile!!
-         )
-         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, outputUri)
-         startActivityForResult(takePictureIntent, REQUEST_CODE)
-
-         if (context?.let { it1 -> takePictureIntent.resolveActivity(it1.packageManager) } != null) {
-
-         } else {
-             Toast.makeText(context, "unable to open camera", Toast.LENGTH_SHORT).show()
-         }
-     }
-
-    private fun getOutputMediaFileUri(type: Int): Uri {
-        return Uri.fromFile(getOutputMediaFile(type))
-    }
-
-    private fun getPhotoFile(fileName: String): File {
-        val storageDirectory = context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(fileName, ".jpg", storageDirectory)
-    }
-
-    @Throws(IOException::class)
-    internal fun createImageFile(): File {
-
-        val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmSS").format(Date())
-        val imageFileName = "IMAGE_" + timeStamp
-        val storageDirectory =
-            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES + "/photo_saving_app")
-
-        if (!storageDirectory.exists()) storageDirectory.mkdir()
-        val image = File(storageDirectory, "$imageFileName.jpg")
-
-        mImageFileLocation = image.absolutePath
-        return image
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-    fun getPath(context: Context, uri: Uri?): String? {
-        var result: String? = null
-        val proj = arrayOf(MediaStore.Images.Media._ID)
-        val cursor: Cursor? =
-            uri?.let { context.contentResolver.query(it, proj, null, null, null) }
-        if (cursor != null) {
-            if (cursor.moveToFirst()) {
-                val column_index: Int = cursor.getColumnIndexOrThrow(proj[0])
-                result = cursor.getString(column_index)
-            }
-            cursor.close()
-        }
-        if (result == null) {
-            result = "Not found"
-        }
-        return result
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -225,6 +82,92 @@ class AnalyticsFragment : Fragment() {
         sequence.start()
     }
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        scanViewModel =
+            ViewModelProvider(this).get(AnalyticsViewModel::class.java)
+
+        _binding = FragmentAnalitycsBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        binding.uploadBtn.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_PICK)
+
+            intent.type = "image/*"
+
+            val mimeTypes = arrayOf("image/jpeg", "image/png")
+            intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
+
+            startActivityForResult(intent, GALLERY_REQUEST_CODE)
+        }
+
+        binding.camBtn.setOnClickListener {
+            captureImage()
+        }
+
+        return root
+    }
+
+    private fun captureImage(){
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        photoFile = getPhotoFileUri(FILE_NAME)
+
+        val fileProvider = context?.let { it1 ->
+            FileProvider.getUriForFile(
+                it1, "com.protel.medskin.provider",
+                photoFile
+            )
+        }
+        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileProvider)
+        if (context?.let { it1 -> takePictureIntent.resolveActivity(it1.packageManager) } != null) {
+            startActivityForResult(takePictureIntent, REQUEST_CODE)
+        } else {
+            Toast.makeText(context, "unable to open camera", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    fun getPath(context: Context, uri: Uri?): String? {
+        var result: String? = null
+        val proj = arrayOf(MediaStore.Images.Media._ID)
+        val cursor: Cursor? =
+            uri?.let { context.contentResolver.query(it, proj, null, null, null) }
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                val column_index: Int = cursor.getColumnIndexOrThrow(proj[0])
+                result = cursor.getString(column_index)
+            }
+            cursor.close()
+        }
+        if (result == null) {
+            result = "Not found"
+        }
+        return result
+    }
+
+    fun getPhotoFileUri(imageFileName: String): File {
+        val storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+        return File.createTempFile(imageFileName, ".jpg", storageDir)
+//        val mediaStorageDir =
+//            File(context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES), APP_TAG)
+//        val mediaStorageDir =
+//            File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), APP_TAG)
+//
+//        if (!mediaStorageDir.exists() && !mediaStorageDir.mkdirs()) {
+//            Log.d(APP_TAG, "failed to create directory")
+//        }
+//
+//        return File(mediaStorageDir.path + File.separator + fileName)
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -252,21 +195,6 @@ class AnalyticsFragment : Fragment() {
                     binding.imageAnalitics.setImageBitmap(mBitmap)
 
                     val picturePath = context?.let { getPath(it, selectedImage) }
-
-//                    val galleryimage = BitmapFactory.decodeFile(galleryphotoFile.absolutePath)
-//                    binding.imagecam.setImageBitmap(galleryimage)
-
-//                    val returnUri: Uri? = data?.data
-//                    val contentResolver = requireActivity().contentResolver
-//                    val bitmapImage = MediaStore.Images.Media.getBitmap(contentResolver, returnUri)
-                    //bitmapImage.scale(1,1)
-
-//                    binding.imagecam.setImageBitmap(galleryimage)
-                    //val takenImageGal = BitmapFactory.decodeFile(galleryphotoFile.absolutePath)
-                    //binding.imagecam.setImageBitmap(takenImageGal)
-
-
-                    //btngallery()
 
                     binding.buttonProcess.setOnClickListener {
                         val nextIntentGallery = Intent(context, DetailResultActivity::class.java)

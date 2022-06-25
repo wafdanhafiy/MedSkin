@@ -25,7 +25,6 @@ class DetailViewModel: ViewModel() {
 //            }
         }
         return skin
-
     }
 
 }

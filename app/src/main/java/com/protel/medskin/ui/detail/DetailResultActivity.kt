@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.protel.medskin.R
 import com.protel.medskin.data.skinsEntity
@@ -16,6 +18,7 @@ import com.protel.medskin.ml.SkinModel
 import com.protel.medskin.ui.nearby.NearByActivity
 import com.protel.medskin.ui.nearby.NearByNotActivity
 import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.task.vision.detector.ObjectDetector
 
 
 class DetailResultActivity : AppCompatActivity() {
@@ -59,11 +62,11 @@ class DetailResultActivity : AppCompatActivity() {
 
         if (apa == null) {
             scans(ppp)
+        }else{
+            scans(apa)
         }
 
         if (ppp != null) {
-            search()
-            //binding.searchbtn.text = ""
             scans(ppp)
         }
     }
@@ -75,45 +78,50 @@ class DetailResultActivity : AppCompatActivity() {
         )[DetailViewModel::class.java]
         val model = SkinModel.newInstance(this)
 
-// Creates inputs for reference.
         val image = TensorImage.fromBitmap(bitmap)
 
-// Runs model inference and gets result.
         val outputs = model.process(image)
         val probability = outputs.probabilityAsCategoryList
         val hasil = probability.maxByOrNull { it.score }?.label ?: "NO_SKINS"
 
         viewModel.setSelectedskin(hasil)
-        viewModel.getSkin()?.let { populateskins(it) }
+        viewModel.getSkin()?.let { populateskins(it)}
 
-// Releases model resources if no longer used.
+        val textWithResult = probability.maxByOrNull{ it.score }?.score
+        if (textWithResult != null) {
+            binding.akurasi.text = "${textWithResult*100}%"
+        }
+
         model.close()
     }
 
-    private fun search() {
-//        binding.tombolsearch.setOnClickListener {
-//
-//         val nextintent = Intent(this, NearByActivity::class.java)
-//          startActivity(nextintent)
-//
-////            binding.gambarinfo.visibility = View.GONE
-////            binding.searchbtn.visibility = View.GONE
-////            binding.infoframe.visibility = View.GONE
-//        }
+    private fun scan(bitmap: Bitmap) {
+        val image = TensorImage.fromBitmap(bitmap)
+
+        val options = ObjectDetector.ObjectDetectorOptions.builder()
+            .setMaxResults(5)
+            .setScoreThreshold(0.3f)
+            .build()
+        val detector = ObjectDetector.createFromFileAndOptions(
+            this,
+            "SkinModel.tflite",
+            options
+        )
+        val results = detector.detect(image)
+
+        val resultToDisplay = results.map {
+            val category = it.categories.first()
+            val text = "${category.label}, ${category.score.times(100).toInt()}%"
+            //DetectionResult(it.boundingBox, text)
+        }
+        val textWithResult = resultToDisplay.toString()
+        //val imgWithResult = image
+        runOnUiThread {
+            binding.akurasi.text = textWithResult
+            //binding.gambarinfo.setImageBitmap(imgWithResult)
+        }
     }
 
-    private fun notsearch() {
-//        binding.tombolsearch.setOnClickListener {
-//
-//            val nextintent = Intent(this, NearByNotActivity::class.java)
-//            startActivity(nextintent)
-//
-//            binding.gambarinfo.visibility = View.GONE
-//            binding.searchbtn.visibility = View.GONE
-//            binding.infoframe.visibility = View.GONE
-//            binding.tombolcari.visibility=View.GONE
-//        }
-    }
 
     private fun populateskins(skinsEntity: skinsEntity) {
         with(binding) {
@@ -121,8 +129,13 @@ class DetailResultActivity : AppCompatActivity() {
             penyebab.text = skinsEntity.penyebab
             gejala.text = skinsEntity.gejala
             penanggulangan.text = skinsEntity.penanggulangan
-//            akurasi.text = skinsEntity.akurasi.toString()
         }
+        Glide.with(this)
+            .load(skinsEntity.gambar)
+            .apply(RequestOptions().override(3500, 2000))
+            .centerCrop()
+            .into(binding.gambarinfo)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -145,3 +158,4 @@ class DetailResultActivity : AppCompatActivity() {
         }
     }
 }
+

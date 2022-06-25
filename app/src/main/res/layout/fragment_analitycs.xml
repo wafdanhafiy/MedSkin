@@ -34,6 +34,19 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:layout_constraintVertical_bias="0.0" />
 
+<!--    <Button-->
+<!--        android:id="@+id/tesBtn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Tes"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/buttonProcess"-->
+<!--        app:layout_constraintHorizontal_bias="0.51"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/buttonProcess"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/buttonProcess"-->
+<!--        app:layout_constraintVertical_bias="0.122" />-->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="300dp"

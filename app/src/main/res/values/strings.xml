@@ -19,7 +19,7 @@
     <string name="noteDanger">Silakan konsultasi ke dokter untuk penanganan lebih lanjut</string>
     <string name="hospital_nearby">Berikut lokasi rumah sakit terdekat</string>
     <string name="benign">Tidak Berbahaya</string>
-<!--    <string name="malignant">Berbahaya</string>-->
+    <!--    <string name="malignant">Berbahaya</string>-->
     <string name="hasil_prediksi_anda_berpotensi">Hasil prediksi anda berpotensi:</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

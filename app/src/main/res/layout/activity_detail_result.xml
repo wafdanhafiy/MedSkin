@@ -53,8 +53,6 @@
             android:textColor="@color/white"
             android:layout_gravity="center"
             android:gravity="center"
-
-
             />
 
     </LinearLayout>
@@ -62,7 +60,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,9 +72,10 @@
 
         <ImageView
             android:id="@+id/gambarinfo"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
             android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
             android:src="@drawable/avatar_2"
             />
 
@@ -144,24 +143,24 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:text="AKURASI"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="20sp" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="AKURASI"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/akurasi"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="-"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="20sp" />-->
+                <TextView
+                    android:id="@+id/akurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
             <TextView
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
