@@ -23,8 +23,6 @@ class DetailArticle : AppCompatActivity() {
 
         val detailArticle = intent.getParcelableExtra<ArticleEntity>(EXTRA_DATA)
         populateDataArticle(detailArticle)
-
-
     }
 
     private fun populateDataArticle(article: ArticleEntity?) {

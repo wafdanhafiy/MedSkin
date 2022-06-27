@@ -51,8 +51,6 @@ class MainActivity : AppCompatActivity() {
                 this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
             )
         }
-
-
     }
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
@@ -60,10 +58,4 @@ class MainActivity : AppCompatActivity() {
             baseContext, it
         ) == PackageManager.PERMISSION_GRANTED
     }
-
-//    private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
-//            ImageAnalyzer.Analyzer {
-//        private val skinModel = SkinModel.newInstance(ctx)
-//
-//    }
 }

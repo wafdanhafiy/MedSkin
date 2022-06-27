@@ -81,32 +81,12 @@
 
     </androidx.cardview.widget.CardView>
 
-
-
-    <!--    <Button-->
-    <!--        android:id="@+id/searchbtn"-->
-    <!--        android:layout_width="100dp"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:layout_gravity="center_horizontal"-->
-    <!--        android:layout_marginTop="30dp"-->
-    <!--        android:background="@drawable/category_box"-->
-    <!--        android:text="Search"-->
-    <!--        android:textColor="@color/black"-->
-    <!--        app:layout_constraintBottom_toTopOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="1.0"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="parent" />-->
-
     <FrameLayout
         android:id="@+id/infoframe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior = "com.google.android.material.bottomsheet.BottomSheetBehavior"
         >
-
-
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -193,8 +173,6 @@
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
-
-
             <TextView
                 android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
@@ -213,15 +191,10 @@
                 android:textSize="20sp" />
             </LinearLayout>
 
-
             </ScrollView>
-
-
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -156,16 +156,6 @@ class AnalyticsFragment : Fragment() {
     fun getPhotoFileUri(imageFileName: String): File {
         val storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
         return File.createTempFile(imageFileName, ".jpg", storageDir)
-//        val mediaStorageDir =
-//            File(context?.getExternalFilesDir(Environment.DIRECTORY_PICTURES), APP_TAG)
-//        val mediaStorageDir =
-//            File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), APP_TAG)
-//
-//        if (!mediaStorageDir.exists() && !mediaStorageDir.mkdirs()) {
-//            Log.d(APP_TAG, "failed to create directory")
-//        }
-//
-//        return File(mediaStorageDir.path + File.separator + fileName)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

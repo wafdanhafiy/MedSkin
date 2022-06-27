@@ -23,8 +23,6 @@ class DetailData : AppCompatActivity() {
 
         val detailData = intent.getParcelableExtra<DataEntity>(EXTRA_DATA)
         populateDataList(detailData)
-
-
     }
 
     private fun populateDataList(data: DataEntity?) {

@@ -18,13 +18,7 @@ class DetailViewModel: ViewModel() {
             if (skinsEntity.name == skinsId) {
                 skin = skinsEntity
             }
-//            else {
-//                val intent = Intent(Intent.ACTION_WEB_SEARCH)
-//                intent.putExtra(SearchManager.QUERY, skinsId)
-//                startActivity(intent)
-//            }
         }
         return skin
     }
-
 }

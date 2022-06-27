@@ -45,8 +45,6 @@ class DetailResultActivity : AppCompatActivity() {
 
         val uri: Uri? = intent.getParcelableExtra("imageUri")
 
-        // just display image in imageview
-        //imageView.setImageBitmap(BitmapFactory.decodeStream(ims))
 
         val apa = BitmapFactory.decodeFile(picture)
         val gapa = BitmapFactory.decodeFile(pictureGal)
@@ -91,7 +89,6 @@ class DetailResultActivity : AppCompatActivity() {
         if (textWithResult != null) {
             binding.akurasi.text = "${textWithResult*100}%"
         }
-
         model.close()
     }
 
@@ -112,16 +109,12 @@ class DetailResultActivity : AppCompatActivity() {
         val resultToDisplay = results.map {
             val category = it.categories.first()
             val text = "${category.label}, ${category.score.times(100).toInt()}%"
-            //DetectionResult(it.boundingBox, text)
         }
         val textWithResult = resultToDisplay.toString()
-        //val imgWithResult = image
         runOnUiThread {
             binding.akurasi.text = textWithResult
-            //binding.gambarinfo.setImageBitmap(imgWithResult)
         }
     }
-
 
     private fun populateskins(skinsEntity: skinsEntity) {
         with(binding) {
@@ -135,7 +128,6 @@ class DetailResultActivity : AppCompatActivity() {
             .apply(RequestOptions().override(3500, 2000))
             .centerCrop()
             .into(binding.gambarinfo)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
